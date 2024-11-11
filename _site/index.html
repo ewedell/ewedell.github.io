@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head prefix="og: http://ogp.me/ns#; dc: http://purl.org/dc/terms/#">
+  
+  
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="http://localhost:4000/" />
+
+  <!-- Basic meta elements -->
+  <meta charset="utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+
+  <title>
+    
+      Taha Shafa
+    
+  </title>
+
+  <!-- Dublin Core metadata for Zotero -->
+  <meta property="dc:title" content="Home" />
+  <meta property="dc:creator" content="Taha Shafa" />
+  <meta property="dc:identifier" content="http://localhost:4000/" />
+  
+  
+  
+  <meta property="dc:source" content="Taha Shafa" />
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Home" />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:image" content="http://localhost:4000/assets/open-graph-logo.png" />
+  <meta property="og:image:width" content="200" />
+  <meta property="og:image:height" content="200" />
+  <meta property="fb:admins" content="elotroalex" />
+  <meta property="fb:app_id" content="589495744558280" />
+
+  <meta property="og:description" content="Taha Shafa's Personal Website">
+  <meta property="og:type" content="website" />
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/pages_style.css" />
+  
+  
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/assets/logos/TS.ico" />
+  
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml" />
+</head>
+
+
+  <body class="theme-base-blue">
+
+    <!--Wrapping all the content.-->
+    <div class="wrap">
+      <header class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/">About</a>
+            
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+                  &nbsp; &nbsp; <a href="/Publications/">Publications</a>
+                
+              
+            
+              
+                
+                  &nbsp; &nbsp; <a href="/Research/">Research</a>
+                
+              
+            
+              
+                
+                  &nbsp; &nbsp; <a href="/Resume/">Curriculum Vitae</a>
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+            
+            
+            <br><small></small>
+          </h3>
+        </div>
+      </header>
+
+      <main class="container content" id="main">
+        <head>
+<style>
+	/* Everything is in `page_style.css`*/
+</style>
+</head>
+<body>
+
+
+<div class="introduction">
+
+
+  <p>
+    I am a Ph.D. candidate graduating in May 2025 from the University of Illinois Aerospace Engineering program. My research interests include 
+    nonlinear control theory and its applications, robotics, applied learning methods, applied physics, and mathematics. 
+    The broad question I am exploring is: <strong>How can one provide autonomous safety-critical performance guarantees under significant uncertainties?</strong> 
+  </p>
+
+  <center><img src="/assets/pictures/profile_pic.png" alt="profile pic" title="Taha Shafa" width="187" height="197"></center>
+</div>
+
+<div>
+  <p style="text-align:center">
+    <a href="/assets/PDFs/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a> |
+    <a href="mailto:tahaas2@illinois.edu">Email</a> |
+    <a href="https://github.com/TahaShafa" target="_blank" rel="noopener noreferrer">GitHub</a> |
+    <a href="https://www.linkedin.com/in/taha-shafa-96835968/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+    <a href="https://scholar.google.com/citations?user=WxrJSyQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> <br>
+    <center><a href="https://illinois.edu/" target="_blank" rel="noopener noreferrer"><img src="/assets/logos/UIUC.png" alt="logo UIUC" width="300" /></a></center>
+  </p>
+</div>
+
+
+</body>
+
+      </main>
+    </div>
+
+    <script>
+    // Highlight search Query
+    var url = window.location.href;
+      if (url.lastIndexOf("?q=") > 0) {
+        // get the index of the parameter, add three (to account for length)
+        var stringloc = url.lastIndexOf("?q=") + 3;
+        // get the substring (query) and decode
+        var searchquery = decodeURIComponent(url.substr(stringloc));
+        // regex matches at beginning of line, end of line or word boundary, useful for poetry
+        var regex = new RegExp("(?:^|\\b)(" + searchquery + ")(?:$|\\b)", "gim");
+        // get, add mark and then set content
+        var content = document.getElementById("main").innerHTML;
+        document.getElementById("main").innerHTML = content.replace(regex, "<mark>$1</mark>");
+      }
+    </script>
+  </body>
+</html>

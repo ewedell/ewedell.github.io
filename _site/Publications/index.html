@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head prefix="og: http://ogp.me/ns#; dc: http://purl.org/dc/terms/#">
+  
+  
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="http://localhost:4000/Publications/" />
+
+  <!-- Basic meta elements -->
+  <meta charset="utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+
+  <title>
+    
+      Taha Shafa | Publications
+    
+  </title>
+
+  <!-- Dublin Core metadata for Zotero -->
+  <meta property="dc:title" content="Publications" />
+  <meta property="dc:creator" content="Taha Shafa" />
+  <meta property="dc:identifier" content="http://localhost:4000/Publications/" />
+  
+  
+  
+  <meta property="dc:source" content="Taha Shafa" />
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Publications" />
+  <meta property="og:url" content="http://localhost:4000/Publications/" />
+  <meta property="og:image" content="http://localhost:4000/assets/open-graph-logo.png" />
+  <meta property="og:image:width" content="200" />
+  <meta property="og:image:height" content="200" />
+  <meta property="fb:admins" content="elotroalex" />
+  <meta property="fb:app_id" content="589495744558280" />
+
+  <meta property="og:description" content="Taha Shafa's Personal Website">
+  <meta property="og:type" content="website" />
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/pages_style.css" />
+  
+  
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/assets/logos/TS.ico" />
+  
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml" />
+</head>
+
+
+  <body class="theme-base-blue">
+
+    <!--Wrapping all the content.-->
+    <div class="wrap">
+      <header class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/">About</a>
+            
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+                  &nbsp; &nbsp; <a href="/Publications/">Publications</a>
+                
+              
+            
+              
+                
+                  &nbsp; &nbsp; <a href="/Research/">Research</a>
+                
+              
+            
+              
+                
+                  &nbsp; &nbsp; <a href="/Resume/">Curriculum Vitae</a>
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+            
+            
+            <br><small></small>
+          </h3>
+        </div>
+      </header>
+
+      <main class="container content" id="main">
+        <article class="page">
+  <h1 class="page-title">Publications</h1>
+  <head>
+  <title>Publications</title>
+  <style>
+    .abstract, .bibtex {
+      display: none;
+      font-size: 14px;
+	  margin-top:-10mm;
+	  margin-bottom:10mm;
+    }
+	.column {
+		margin-bottom:-5mm;
+	}
+	.row {
+		margin-top:5mm;
+		margin-bottom:10mm;
+	}
+    a { 
+      color: #0000EE;
+      cursor: pointer;
+    }
+	pre {
+	  padding: 10px;
+	}
+	.right {
+	  width: 75%;
+	  font-size: 16px;
+	}	
+	table, tr, td {
+		border: none;
+	}
+  </style>
+  <script>
+    function toggleDisplay(id) {
+      var element = document.getElementById(id);
+      if (!element.style.display || element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+</head>
+<body>
+
+
+
+
+
+
+<ul style="margin-top:1cm;">
+	<li> <a style="color:#454545; text-decoration:none;" href="#Journal">Journal papers</a> </li>
+	<li> <a style="color:#454545; text-decoration:none;" href="#Peer">Peer-reviewed conference papers</a> </li>
+	<li> <a style="color:#454545; text-decoration:none;" href="#Nonpeer">Other conference papers</a> </li>
+	<li> <a style="color:#454545; text-decoration:none;" href="#Theses">Theses</a> </li>
+</ul>
+
+
+
+<hr style="margin-top:1cm;"> 
+<h2>Citations</h2>
+
+<div class="row">
+  <div class="column" width="40%">
+	<a class="button-link" href="https://scholar.google.com/citations?user=WxrJSyQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+		<span class="button">
+			<i class="ai ai-google-scholar"></i>
+			<span>Google Scholar</span>
+		</span>
+	</a>
+	<a class="button-link" href="https://orcid.org/my-orcid?orcid=0000-0002-8121-585X" target="_blank" rel="noopener noreferrer">
+		<span class="button">
+			<i class="ai ai-orcid"></i>
+			<span>ORCID</span>
+		</span>
+	</a>
+	
+	<table id="citations_table" style="margin-top: 5mm;">
+	  <tr> <td>Citations: </td> <td></td> </tr>
+	  <tr> <td>h-index: </td> <td></td> </tr>
+	  <tr> <td>i10-index: </td> <td></td> </tr>
+	</table>
+	<div id="last_update" style="font-size: 12px;"></div>	
+  </div>
+  <div class="column" width="20%" style="margin-right:2cm;"></div>
+  <div class="column" width="40%">
+		<canvas id="histogram" title="Citations histogram" height="200"></canvas>
+  </div>
+</div>
+  
+  
+  
+  
+<hr style="margin-top:1cm;"> 
+<h2 id="Journal">Journal papers</h2>
+  
+  
+  
+
+
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/Manifolds.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+	<em>Guaranteed Reachability on Riemannian Manifolds for Unknown Nonlinear Systems</em> <br>
+	<strong>Taha Shafa</strong>, Melkior Ornik <br>
+	<!--a href="" target="_blank" rel="noopener noreferrer"-->Submitted to and currently under review by IEEE Transactions on Automatic Control<!--/a-->, 2024 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('network-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('network-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/Guaranteed_Reachability_on_Riemannian_Manifolds_for_Unknown_Nonlinear_Systems_v1.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Network-Resilience" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fab fa-github"></i> Code</span>
+		</a-->
+		<a class="button-link" href="https://arxiv.org/abs/2404.09850" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
+		</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='Guaranteed Reachability on Riemannian Manifolds for Unknown Nonlinear Systems' id='' target="_blank" rel="noopener noreferrer">0</a>
+    </div>
+  </div>
+</div>
+<div id="network-abstract" class="abstract">
+    Determining the reachable set for a given nonlinear system is critically important for autonomous trajectory planning for reach-avoid applications and safety critical scenarios. 
+    Providing the reachable set is generally impossible when the dynamics are unknown, so we calculate underapproximations of such sets using local dynamics at a single point and bounds
+    on the rate of change of the dynamics determined from known physical laws. Motivated by scenarios where an adverse event causes an abrupt change in the dynamics, we attempt to
+    determine a provably reachable set of states without knowledge of the dynamics. This paper considers systems which are known to operate on a manifold. Underapproximations are 
+    calculated by utilizing the aforementioned knowledge to derive a guaranteed set of velocities on the tangent bundle of a complete Riemannian manifold that can be reached within a 
+    finite time horizon. We then interpret said set as a control system; the trajectories of this control system provide us with a guaranteed set of reachable states the unknown system 
+    can reach within a given time. The results are general enough to apply on systems that operate on any complete Riemannian manifold. To illustrate the practical implementation of our
+    results, we apply our algorithm to a model of a pendulum operating on a sphere and a three-dimensional rotational system which lives on the abstract set of special orthogonal matrices. 
+	</div>
+<pre id="network-bibtex" class="bibtex">
+@misc{shafa2024guaranteedreachabilityriemannianmanifolds,
+      title={Guaranteed Reachability on Riemannian Manifolds for Unknown Nonlinear Systems}, 
+      author={Taha Shafa and Melkior Ornik},
+      year={2024},
+      eprint={2404.09850},
+      archivePrefix={arXiv},
+      primaryClass={eess.SY},
+      url={https://arxiv.org/abs/2404.09850}, 
+}
+</pre>        
+
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/controller_synthesis.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+	<em>Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems</em> <br>
+	Yiming Meng, <strong>Taha Shafa</strong>, Jesse Wei, Melkior Ornik <br>
+	<!--a href="" target="_blank" rel="noopener noreferrer"-->Submitted to and currently under review by IEEE Transactions on Automatic Control<!--/a-->, 2024 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('delay-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('delay-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/Online_Learning_and_Control_Synthesis_for_Reachable_Paths_of_Unknown_Nonlinear_Systems_v1.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Spacecraft-Resilience" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fab fa-github"></i> Code</span>
+		</a-->
+		<a class="button-link" href="https://arxiv.org/abs/2403.03413" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
+		</a>	
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems' target="_blank" rel="noopener noreferrer">0</a>
+	</div>
+  </div>
+</div>
+<div id="delay-abstract" class="abstract">
+	  In this paper, we present a novel method to drive a nonlinear system to a desired state, with limited a priori knowledge of its dynamic model: local dynamics at a single point and 
+    the bounds on the rate of change of these dynamics. This method synthesizes control actions by utilizing locally learned dynamics along a trajectory, based on data available up to
+    that moment, and known proxy dynamics, which can generate an underapproximation of the unknown system's true reachable set. An important benefit to the contributions of this paper
+    is the lack of knowledge needed to execute the presented control method. We establish sufficient conditions to ensure that a controlled trajectory reaches a small neighborhood of 
+    any provably reachable state within a short time horizon, with precision dependent on the tunable parameters of these conditions. 
+</div>
+<pre class="bibtex" id="delay-bibtex">
+@misc{meng2024onlinelearningcontrolsynthesis,
+      title={Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems}, 
+      author={Yiming Meng and Taha Shafa and Jesse Wei and Melkior Ornik},
+      year={2024},
+      eprint={2403.03413},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2403.03413}, 
+}
+</pre>        
+
+
+
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/unknown_reachability.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+	<em>Reachability of Nonlinear Systems with Unknown Dynamics</em> <br>
+	<strong>Taha Shafa</strong>, Melkior Ornik <br>
+	<a href="https://ieeexplore.ieee.org/abstract/document/9764380" target="_blank" rel="noopener noreferrer">IEEE Transactions on Automatic Control (TAC)</a>, 2022 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('integrators-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('integrators-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/Reachability_of_Nonlinear_Systems_with_Unknown_Dynamics.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Quantitative-Resilience" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fab fa-github"></i> Code</span>
+		</a-->
+		<a class="button-link" href="https://arxiv.org/abs/2108.11045" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
+		</a>	
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4983265435710608085' id='Reachability of Nonlinear Systems with Unknown Dynamics' target="_blank" rel="noopener noreferrer">8</a>
+	</div>
+  </div>
+</div>
+<div id="integrators-abstract" class="abstract">
+    Determining the reachable set for a given nonlinear control system is crucial for system control and planning. However, computing such a set is impossible if the system's dynamics
+    are not fully known. This paper is motivated by a scenario where a system suffers an adverse event mid-operation, resulting in a substantial change to the system's dynamics, 
+    rendering them largely unknown. Our objective is to conservatively approximate the system's reachable set solely from its local dynamics at a single point and the bounds on the
+    rate of change of its dynamics. We translate this knowledge about the system dynamics into an ordinary differential inclusion. We then derive a conservative approximation of the
+    velocities available to the system at every system state. An inclusion using this approximation can be interpreted as a control system; the trajectories of the derived control
+    system are guaranteed to be trajectories of the unknown system. To illustrate the practical implementation and consequences of our work, we apply our algorithm to a simplified 
+    model of an unmanned aerial vehicle. 
+</div>
+<pre class="bibtex" id="integrators-bibtex">
+@ARTICLE{9764380,
+  author={Shafa, Taha and Ornik, Melkior},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Reachability of Nonlinear Systems With Unknown Dynamics}, 
+  year={2023},
+  volume={68},
+  number={4},
+  pages={2407-2414},
+  keywords={Control systems;System dynamics;Trajectory;Vehicle dynamics;Uncertainty;Aerospace electronics;Aerospace control;Aerospace systems;autonomous systems;nonlinear control systems;reachable set computation;uncertain systems},
+  doi={10.1109/TAC.2022.3170855}}
+  </pre>
+        
+      
+
+
+
+
+  
+<hr style="margin-top:1cm;">
+<h2 id="Peer">Peer-reviewed conference papers</h2>
+
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/sys_id_reachable_sets.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>Identifying Single-Input Linear System Dynamics from Reachable Sets</em><br>
+    <strong>Taha Shafa</strong>, Roy Dong, Melkior Ornik<br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/10384274" target="_blank" rel="noopener noreferrer"-->IEEE Conference on Decision and Control (CDC)</a>, 2023 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('CDC23-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('CDC23-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/Identifying_Single_Input_Linear_System_Dynamics_from_Reachable_Sets.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fab fa-github"></i> Code</span>
+		</a-->
+		<a class="button-link" href="https://arxiv.org/abs/2309.04340" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
+		</a>	
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Learning to Provably Satisfy High Relative Degree Constraints for Black-Box Systems' target="_blank" rel="noopener noreferrer">0</a>
+	</div>
+  </div>
+</div>
+<div id="CDC23-abstract" class="abstract">
+    This paper is concerned with identifying linear system dynamics without the knowledge of individual system trajectories, but from the knowledge of the system's reachable sets observed
+    at different times. Motivated by a scenario where the reachable sets are known from partially transparent manufacturer specifications or observations of the collective behavior of
+    adversarial agents, we aim to utilize such sets to determine the unknown system's dynamics. The paper has two contributions. Firstly, we show that the sequence of the system's 
+    reachable sets can be used to uniquely determine the system's dynamics for asymmetric input sets under some generic assumptions, regardless of the system's dimensions. We also prove
+    the same property holds up to a sign change for two-dimensional systems where the input set is symmetric around zero. Secondly, we present an algorithm to determine the system's 
+    dynamics. We apply and verify the developed theory and algorithms on an unknown band-pass filter circuit solely provided the unknown system's reachable sets over a finite observation period.
+</div>
+<div id="CDC23-bibtex" class="bibtex">
+<pre><code>
+@INPROCEEDINGS{10384274,
+  author={Shafa, Taha and Dong, Roy and Ornik, Melkior},
+  booktitle={2023 62nd IEEE Conference on Decision and Control (CDC)}, 
+  title={Identifying Single-Input Linear System Dynamics from Reachable Sets}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={3527-3532},
+  keywords={Linear systems;Band-pass filters;Maximum likelihood detection;System dynamics;Heuristic algorithms;Nonlinear filters;Filtering theory},
+  doi={10.1109/CDC49753.2023.10384274}}
+</code></pre>
+</div>
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/maximal_ellipse.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>Maximal Ellipsoid Method for Guaranteed Reachability of Unknown Fully Actuated Systems</em><br>
+    <strong>Taha Shafa</strong>, Melkior Ornik <br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/9992407" target="_blank" rel="noopener noreferrer"-->IEEE Conference on Decision and Control (CDC)</a>, 2022 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('maximal-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('maximal-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/Maximal_Ellipsoid_Method_for_Guaranteed_Reachability_of_Unknown_Fully_Actuated_Systems.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<!--a class="button-link" href="https://github.com/labicon/POLICEd-RL" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fab fa-github"></i> Code</span>
+		</a-->
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13882103573082338547' id='Maximal Ellipsoid Method for Guaranteed Reachability of Unknown Fully Actuated Systems' target="_blank" rel="noopener noreferrer">2</a>
+	</div>
+  </div>
+</div>
+<div id="maximal-abstract" class="abstract">
+    In the face of an adverse event, autonomous systems may undergo abrupt changes in their dynamics. In such an event, systems should be able to determine their continuing capabilities to then
+    execute a provably completable task. This paper focuses on the scenario of a change in the system dynamics following an adverse event, aiming to determine the system's guaranteed performance
+    capabilities by finding a set of states that are provably reachable by the system. While it is obviously impossible to exactly determine the reachable set without full knowledge of the
+    system dynamics, we present a method of determining its under-approximation while assuming only partial knowledge of the system structure. Our technical approach relies on showing that
+    an intersection of infinitely many ellipsoids — available velocity sets for each system consistent with the partial knowledge of the dynamics — is the same as an intersection of some 
+    finite collection of ellipsoids. This result enables us to find a maximal ellipsoid lying in such an intersection, yielding a set of velocities that the system is provably able to pursue
+    regardless of its exact dynamics.
+</div>
+<div id="maximal-bibtex" class="bibtex">
+<pre><code>
+@INPROCEEDINGS{9992407,
+  author={Shafa, Taha and Ornik, Melkior},
+  booktitle={2022 IEEE 61st Conference on Decision and Control (CDC)}, 
+  title={Maximal Ellipsoid Method for Guaranteed Reachability of Unknown Fully Actuated Systems}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={5002-5007},
+  keywords={Actuators;Uncertainty;System dynamics;Autonomous systems;Perturbation methods;Task analysis;Ellipsoids},
+  doi={10.1109/CDC51059.2022.9992407}}
+</code></pre>
+</div>
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/vibration_mitigation.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>High-Frequency Vibration Reduction for Unmanned Ground Vehicles on Unstructured Terrain</em><br>
+    Hamza El-Kebir, <strong>Taha Shafa</strong>, Amartya Purushottam, Melkior Ornik, Ahmet Soylemezoglu <br>
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-98260-7_5" target="_blank" rel="noopener noreferrer">8<sup>th</sup> International Conference on Modelling and Simulation for Autonomous Systems</a>, 2021 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('vibration-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('vibration-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/High_Frequency_Vibration_Reduction_for_Unmanned_Ground_Vehicles_on_Unstructured_Terrain.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7734426462927221701' id='High-Frequency Vibration Reduction for Unmanned Ground Vehicles on Unstructured Terrain<' target="_blank" rel="noopener noreferrer">2</a>
+	</div>
+  </div>
+</div>
+<div id="vibration-abstract" class="abstract">
+    High-frequency vibrations encountered during land transit of sensitive payloads have long been known to be a possible cause of payload damage and subsequent mission failure. As sensors
+    are also adversely affected by this phenomenon, we aim to provide a solution to minimize high-frequency noise vibrations without reliance on high performance sensing. Naturally, this
+    presents the need for on-board adaptive control capabilities to reduce sensor noise and damage to secured payloads. Thus, we present a novel approach to reducing high-frequency vibration
+    content (HVC) encountered during transit, with the explicit goal of maintaining a desired vehicle speed while keeping high-frequency vibrations below a given threshold regardless of 
+    the terrain characteristics. To this end, we present a two-stage solution consisting of a vibration-compensating speed controller and an optimal tracking controller for control command
+    determination. The proposed controller is implemented on a Clearpath Jackal unmanned ground vehicle and subjected to a priori unknown mixed terrain types. Experiments performed on these
+    varying terrains show that the proposed control architecture is able to adjust the desired robot trajectory to remain below the vibration thresholds defined by the mission objective.
+</div>
+<div id="vibration-bibtex" class="bibtex">
+<pre><code>
+  @InProceedings{10.1007/978-3-030-98260-7_5,
+  author="El-Kebir, Hamza
+  and Shafa, Taha
+  and Purushottam, Amartya
+  and Ornik, Melkior
+  and Soylemezoglu, Ahmet",
+  title="High-Frequency Vibration Reduction for Unmanned Ground Vehicles on Unstructured Terrain",
+  booktitle="Modelling and Simulation  for Autonomous Systems",
+  year="2022",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="74--92",
+  isbn="978-3-030-98260-7"
+}
+</code></pre>
+</div> 
+      
+  
+  
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/2dof_laminate_leg.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>Design of a Two DOF Laminate Leg Transmission for Creating Walking Robot Platforms</em><br>
+    Benjamin D. Shuch, <strong>Taha Shafa</strong>, Eric Rogers, Daniel Aukes <br>
+    <a href="https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2019/V05BT07A046/1070069" target="_blank" rel="noopener noreferrer">20<sup>th</sup> ASME 2019 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference</a>, 2019 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('ASME-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('ASME-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/IDET_C_Laminate_Quadruped_Transmission.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Design of a Two DOF Laminate Leg Transmission for Creating Walking Robot Platforms' target="_blank" rel="noopener noreferrer">0</a>
+	</div>
+  </div>
+</div>
+<div id="ASME-abstract" class="abstract">
+  In this article we present a low-cost, two degree-of-freedom laminate robot transmission for legged locomotion applications. This transmission is specifically applied
+    in the design of a quadrupedal robot, and has the potential to be used in other multi-legged systems. It offers a complex control space with a variety of different
+    programmable gait trajectories, while leveraging low-cost linkages made using laminate approaches. The two-degree-of-freedom kinematics of the leg are subsequently
+    modeled in Python, and the workspace of the robot is then experimentally verified on an initial quadrupedal design. Critical design considerations include the laminate
+    design, the rigidity of the materials that make up the laminate, and the range of motion the device can undergo.
+</div>
+<div id="ASME-bibtex" class="bibtex">
+<pre><code>
+@proceedings{10.1115/DETC2019-98100,
+    author = {Shuch, Benjamin D. and Shafa, Taha and Rogers, Eric and Aukes, Daniel M.},
+    title = "{Design of a Two DOF Laminate Leg Transmission for Creating Walking Robot Platforms}",
+    volume = {Volume 5B: 43rd Mechanisms and Robotics Conference},
+    series = {International Design Engineering Technical Conferences and Computers and Information in Engineering Conference},
+    pages = {V05BT07A046},
+    year = {2019},
+    doi = {10.1115/DETC2019-98100},
+    url = {https://doi.org/10.1115/DETC2019-98100},
+    eprint = {https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-pdf/IDETC-CIE2019/59247/V05BT07A046/6453830/v05bt07a046-detc2019-98100.pdf},
+}
+</code></pre>
+</div>   
+        
+      
+ 
+ 
+  
+  
+  
+<hr style="margin-top:1cm;">
+<h2 id="Nonpeer">Other conference papers</h2>
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/verse_acas_xu.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu</em><br>
+    Gokul Puthumanaillam, Manav Vora, <strong>Taha Shafa</strong>, Yangge Li, Melkior Ornik, Sayan Mitra <br>
+    <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2024-1168" target="_blank" rel="noopener noreferrer"-->AIAA Scitech</a>, 2024 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('AAS-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('AAS-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/Verse_nnenum.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>	
+		<a class="button-link" href="https://github.com/gokulp01/verse-nnenum-int" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fab fa-github"></i> Code</span>
+		</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu' target="_blank" rel="noopener noreferrer">0</a>
+	</div>
+  </div>
+</div>
+<div id="AAS-abstract" class="abstract">
+This paper introduces a novel approach to verification of neural network controlled systems, combining the capabilities of the nnenum framework with the Verse toolkit. 
+    Addressing a critical gap in the traditional verification process which often does not include the system dynamics analysis while computing the neural network outputs,
+    our integrated methodology enhances the precision and safety of decision-making in complex dynamical systems. By iteratively verifying neural network decisions and
+    propagating system states, we maintain an accurate representation of the system’s behavior over time, a vital aspect in ensuring operational safety. Our approach is
+    exemplified through the verification of the neural network controlled Airborne Collision Avoidance System for Unmanned Aircraft (ACAS Xu). We demonstrate that the
+    integration of nnenum and Verse not only accurately computes reachable sets for the UAS but also effectively handles the inherent complexity and nonlinearity of the system.
+    The resulting analysis provides a nuanced understanding of the system’s behavior under varying operational conditions and interactions with other agents, such as
+    intruder aircraft. The comprehensive simulations conducted as part of this study reveal the robustness of our approach, validating its effectiveness in verifying the
+    safety and reliability of learned controllers. Furthermore, the scalability and adaptability of our methodology suggest its broader applicability in various autonomous
+    systems requiring rigorous safety verification.
+</div>
+<div id="AAS-bibtex" class="bibtex">
+<pre><code>
+  @inbook{doi:10.2514/6.2024-1168,
+  author = {Gokul Puthumanaillam and Manav Ketan Vora and Taha Shafa and Yangge Li and Melkior Ornik and Sayan Mitra},
+  title = {Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu},
+  booktitle = {AIAA SCITECH 2024 Forum},
+  chapter = {},
+  pages = {},
+  doi = {10.2514/6.2024-1168},
+  URL = {https://arc.aiaa.org/doi/abs/10.2514/6.2024-1168},
+  eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.2024-1168}
+}
+</code></pre>
+</div>
+
+
+
+
+<hr style="margin-top:1cm;">
+<h2 id="Theses">Theses</h2>
+
+  
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/car.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>Reachable Predictive Control: A Novel Control Algorithm for Nonlinear Systems with Unknown Dynamics (Currently being written)</em><br>
+    <strong>Taha Shafa</strong> &nbsp;&nbsp;&nbsp; Advisor: Melkior Ornik <br>
+    Doctoral thesis. <a href="https://illinois.edu/" target="_blank" rel="noopener noreferrer">University of Illinois Urbana-Champaign</a>, 2025 <br>
+	<div class="links">
+		<!--a class="button-link" onclick="toggleDisplay('PhD-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a-->
+		<!--a class="button-link" onclick="toggleDisplay('PhD-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a-->
+		<!--a class="button-link" href="/assets/PDFs/PhD_Thesis.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a-->		
+		<a class="button-link" href="/assets/Slides/Prelim_Slides.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-powerpoint"></i> Slides</span>
+		</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Reachable Predictive Control: A Novel Control Algorithm for Nonlinear Systems with Unknown Dynamics' target="_blank" rel="noopener noreferrer">0</a>
+	</div>
+  </div>
+</div>
+<!--div id="PhD-abstract" class="abstract">
+  After docking to the International Space Station (ISS), the Nauka module suffered a software error causing its thrusters to misfire.
+  In turn, these uncontrolled thrusters rotated the whole space station by 540° before being counteracted by other thrusters of the ISS.
+  Motivated by such a scenario, this thesis investigates the guaranteed resilience of autonomous systems to a similar class of malfunctions called partial loss of control authority over actuators.
+  These malfunctions are characterized by actuators producing uncontrolled and undesirable outputs instead of following the controller’s commands.
+  A loss of control authority can be caused, for instance, by a software bug as in the ISS example or by an adversarial takeover of some actuators of the system.
+  In this setting, we investigate the malfunctioning system's remaining capabilities to complete its mission in terms of resilient reachability and resilient trajectory tracking.
+  We also quantify the resilience of linear systems by comparing the reachability performance of the nominal dynamics with that of the worst-case malfunctioning dynamics.
+  We extend our resilience investigation to systems further inflicted with actuation delays preventing an immediate cancellation of the undesirable outputs.
+  We illustrate our theory on a wide range of applications including an octocopter, a fighter jet model, and an orbital inspection mission.
+</div>
+<div id="PhD-bibtex" class="bibtex">
+<pre><code>
+@phdthesis{bouvier2023phd,
+  author = {Jean-Baptiste Bouvier},
+  title = {Guaranteed resilience of autonomous systems to loss of control authority over actuators},
+  school = {University of Illinois Urbana-Champaign},
+  year = {2023}
+}
+</code></pre>
+</div-->
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pics/balancing_robot.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>Design, Model, and Control of a Low-cost 3 Degree of Freedom Balancing Laminate Leg with an Actively Controlled Ankle Using Fundamental Controls Concepts</em><br>
+    <strong>Taha Shafa</strong> &nbsp;&nbsp;&nbsp; Advisor: Daniel Aukes <br>
+    Master thesis. <a href="https://www.asu.edu/" target="_blank" rel="noopener noreferrer">Arizona State Univesrity</a>, 2020 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('MS-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('MS-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="/assets/PDFs/Masters_Thesis_Biped_Design.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11817910510869185927&as_sdt=5' id='Design, Model, and Control of a Low-cost 3 Degree of Freedom Balancing Laminate Leg with an Actively Controlled Ankle Using Fundamental Controls Concepts' target="_blank" rel="noopener noreferrer">1</a>
+	</div>
+  </div>
+</div>
+<div id="MS-abstract" class="abstract">
+  This thesis introduces a new robotic leg design with three degrees of freedom that
+  can be adapted for both bipedal and quadrupedal locomotive systems, and serves as
+  a blueprint for designers attempting to create low cost robot legs capable of balancing
+  and walking. Currently, bipedal leg designs are mostly rigid and have not strongly
+  taken into account the advantages/disadvantages of using an active ankle, as opposed
+  to a passive ankle, for balancing. This design uses low-cost compliant materials, but
+  the materials used are thick enough to mimic rigid properties under low stresses, so
+  this paper will treat the links as rigid materials. A new leg design has been created
+  that contains three degrees of freedom that can be adapted to contain either a passive
+  ankle using springs, or an actively controlled ankle using an additional actuator. This
+  thesis largely aims to focus on the ankle and foot design of the robot and the torque
+  and speed requirements of the design for motor selection. The dynamics of the system,
+  including height, foot width, weight, and resistances will be analyzed to determine
+  how to improve design performance. Model-based control techniques will be used to
+  control the angle of the leg for balancing. In doing so, it will also be shown that it
+  is possible to implement model-based control techniques on robots made of laminate
+  materials.
+</div>
+<div id="MS-bibtex" class="bibtex">
+<pre><code>
+@mastersthesis{shafa2020design,
+  title={Design, Model, and Control of a Low-Cost 3 Degree of Freedom Balancing Laminate Leg with an Actively Controlled Ankle Using Fundamental Controls Concepts},
+  author={Shafa, Taha},
+  year={2020},
+  school={Arizona State University}
+}
+</code></pre>
+</div>  
+
+        
+
+  
+<!-- Commented model
+
+<div class="row">
+  <div class="column left">
+    <img src="/assets/paper_pic.png" alt="pic from paper" width="200" >
+  </div>
+  <div class="column right">
+    <em>Title</em><br>
+    <strong>Jean-Baptiste Bouvier</strong>,  <br>
+    <a href="" target="_blank" rel="noopener noreferrer">Journal Name</a>, year <br>
+    <a onclick="toggleDisplay('paper1-abstract')">Abstract</a> |
+    <a onclick="toggleDisplay('paper1-bibtex')">Bibtex</a> |
+    <a href="/assets/PDFs/___.pdf" target="_blank" rel="noopener noreferrer">Pdf</a> |
+    <a href="https://arxiv.org/abs/___" target="_blank" rel="noopener noreferrer">ArXiv</a> |
+    <a href="https://github.com/Jean-BaptisteBouvier/___" target="_blank" rel="noopener noreferrer">GitHub</a> |
+    <a href="/assets/Slides/___.pdf" target="_blank" rel="noopener noreferrer">Slides</a> |
+	Cited by <a href='' id="title" target="_blank" rel="noopener noreferrer">0</a> <br>
+	
+	<a class="button-link" onclick="toggleDisplay('network-abstract')">
+		<span class="button"><i class="fas fa-list"></i> Abstract</span>
+	</a>
+	<a class="button-link" onclick="toggleDisplay('network-bibtex')">
+		<span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span>
+	</a>
+	
+	<a class="button-link" href="/assets/PDFs/Resilience_of_Linear_Networks__ArXiv_.pdf" target="_blank" rel="noopener noreferrer">
+		<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+	</a>
+
+	<a class="button-link" href="https://github.com/labicon/POLICEd-RL" target="_blank" rel="noopener noreferrer">
+		<span class="button"><i class="fab fa-github"></i> Code</span>
+	</a>
+
+	<a class="button-link" href="https://arxiv.org/abs/2306.16588" target="_blank" rel="noopener noreferrer">
+		<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
+	</a>
+
+	<a class="button-link" href="https://jean-baptistebouvier.github.io/assets/blog_posts/policed_RL/" target="_blank" rel="noopener noreferrer">
+		<span class="button"><i class="fas fa-scroll"></i> Blog</span>
+	</a>
+	
+	<a class="button-link" href="https://jean-baptistebouvier.github.io/assets/blog_posts/policed_RL/" target="_blank" rel="noopener noreferrer">
+		<span class="button"><i class="fas fa-file-powerpoint"></i> Slides</span>
+	</a>
+	
+	<a class="button-link" href="https://jean-baptistebouvier.github.io/assets/blog_posts/policed_RL/" target="_blank" rel="noopener noreferrer">
+		<span class="button"><i class="fas fa-globe"></i> Website</span>
+	</a>
+  </div>
+</div>
+
+<div id="paper1-abstract" class="abstract">
+  abstract
+</div>
+<div id="paper1-bibtex" class="bibtex">
+<pre><code>
+@article{bouvier2023,
+  author = {},
+  title = {},
+  year = {2023}
+}
+</code></pre>
+</div>
+-->
+  
+ 
+ 
+<!-- Code to add the histogram of citations -->
+<script src="/assets/js/chart.js"></script>
+
+<!-- Code to add a button return to top -->
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+<script src="/assets/js/top_button.js" ></script>
+
+ 
+  
+</body>
+
+</article>
+
+      </main>
+    </div>
+
+    <script>
+    // Highlight search Query
+    var url = window.location.href;
+      if (url.lastIndexOf("?q=") > 0) {
+        // get the index of the parameter, add three (to account for length)
+        var stringloc = url.lastIndexOf("?q=") + 3;
+        // get the substring (query) and decode
+        var searchquery = decodeURIComponent(url.substr(stringloc));
+        // regex matches at beginning of line, end of line or word boundary, useful for poetry
+        var regex = new RegExp("(?:^|\\b)(" + searchquery + ")(?:$|\\b)", "gim");
+        // get, add mark and then set content
+        var content = document.getElementById("main").innerHTML;
+        document.getElementById("main").innerHTML = content.replace(regex, "<mark>$1</mark>");
+      }
+    </script>
+  </body>
+</html>
