@@ -4,13 +4,13 @@
 title:               Eleanor Wedell
 #tagline:             Smart and Good Looking
 description:         Eleanor Wedell's Personal Website
-url:                 'http://EleanorWedell.github.io'
+url:                 'http://ewedell.github.io'
 baseurl:             ''
 
 # About/contact
 author:
   name:              Eleanor Wedell
-  url:               http://EleanorWedell.github.io
+  url:               http://ewedell.github.io
   email:             ewedell@gmail.com
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown

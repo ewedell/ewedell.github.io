@@ -15,7 +15,7 @@ from urllib.request import urlopen
 ################# User Inputs ################
 
 # Link to the Google scholar page to read
-link = "https://scholar.google.com/citations?user=WxrJSyQAAAAJ&hl=en"
+link = "https://scholar.google.com/citations?user=TA-2sd0AAAAJ&hl=en&oi=ao"
 # Name of the JavaScript file that pushes the Google scholar data to html
 javascript_file = 'chart.js'
 # Choose whether or not to display the extracted data in the console

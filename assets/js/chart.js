@@ -6,15 +6,15 @@ using data scraped from Google Scholar using the Python script
 */
 
 /* Data scraped from Google Scholar with Python script*/
-var total_citations = 13;
-var h_index = 2;
-var i10_index = 0;
-var last_update = "September 27 2024";
-var years_cited = [2021, 2022, 2023, 2024];
-var citations_per_year = [1, 4, 3, 5];
-var citations_per_paper = [8, 2, 2, 1, 0, 0, 0, 0, 0];
-var titles = ['Reachability of nonlinear systems with unknown dynamics', 'Maximal Ellipsoid Method for Guaranteed Reachability of Unknown Fully Actuated Systems', 'High-Frequency Vibration Reduction for Unmanned Ground Vehicles on Unstructured Terrain', 'Design, Model, and Control of a Low-Cost 3 Degree of Freedom Balancing Laminate Leg with an Actively Controlled Ankle Using Fundamental Controls Concepts', 'Guaranteed Reachability on Riemannian Manifolds for Unknown Nonlinear Systems', 'Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems', 'Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu', 'Identifying Single-Input Linear System Dynamics from Reachable Sets', 'Design of a two DOF laminate leg transmission for creating walking robot platforms'];
-var links_citations = ['https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4983265435710608085', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13882103573082338547', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7734426462927221701', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11817910510869185927', '', '', '', '', ''];
+var total_citations = 61;
+var h_index = 3;
+var i10_index = 3;
+var last_update = "September 17 2025";
+var years_cited = [2021, 2022, 2023, 2024, 2025];
+var citations_per_year = [2, 12, 16, 12, 19];
+var citations_per_paper = [25, 18, 12, 2, 2, 2, 0, 0, 0, 0, 0];
+var titles = ['Center-periphery structure in research communities', 'SCAMPP: scaling alignment-based phylogenetic placement to large trees', 'Scalable and accurate phylogenetic placement using pplacer-XR', 'BSCAMPP: Batch-Scaled Phylogenetic Placement on Large Trees', 'TIPP3 and TIPP3-fast: Improved abundance profiling in metagenomics', 'BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences', 'TIPP-SD: A New Method for Species Detection in Microbiomes', 'FastEnsemble: A new scalable ensemble clustering method', 'FastEnsemble: scalable ensemble clustering on large networks', '23rd International Workshop on Algorithms in Bioinformatics (WABI 2023)', 'SCAMPP: Scalable alignment-based phylogenetic placement'];
+var links_citations = ['https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17886567727414323311', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12911586867405934236', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11462105373143681199', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4505879241081408106', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3308394324546610284', 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6439494667752595507', '', '', '', '', ''];
 	
   
 /* Getting the table to write citations and indices */
@@ -60,10 +60,11 @@ const hist = new Chart(ctx, {
 	  plugins: {legend: {display: false}},
       scales: {y: {beginAtZero: true}}
     }
-});
+});Thesis
+
   
 /* Adjusting column width of the histogram with amount of data*/
-const col_width = 40
+const col_width = 60
 document.getElementById('histogram').style.width = (hist.data.labels.length + 1)*col_width + "px"
 
 

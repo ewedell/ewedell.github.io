@@ -26,8 +26,11 @@ title: Publications
 	pre {
 	  padding: 10px;
 	}
+  .left{
+    width: 35%;
+  }
 	.right {
-	  width: 75%;
+	  width: 65%;
 	  font-size: 16px;
 	}	
 	table, tr, td {
@@ -58,10 +61,9 @@ title: Publications
 
 
 <ul style="margin-top:1cm;">
-	<li> <a style="color:#454545; text-decoration:none;" href="#Journal">Journal papers</a> </li>
-	<li> <a style="color:#454545; text-decoration:none;" href="#Peer">Peer-reviewed conference papers</a> </li>
-	<li> <a style="color:#454545; text-decoration:none;" href="#Nonpeer">Other conference papers</a> </li>
-	<li> <a style="color:#454545; text-decoration:none;" href="#Theses">Theses</a> </li>
+	<li> <a style="color:#454545; text-decoration:none;" href="#Journal">Journal Papers</a> </li>
+	<li> <a style="color:#454545; text-decoration:none;" href="#Peer">Peer-Reviewed Conference Papers</a> </li>
+	<li> <a style="color:#454545; text-decoration:none;" href="#MS Theses">MS Thesis</a> </li>
 </ul>
 
 
@@ -77,7 +79,7 @@ title: Publications
 			<span>Google Scholar</span>
 		</span>
 	</a>
-	<a class="button-link" href="https://orcid.org/my-orcid?orcid=0000-0002-7911-9156" target="_blank" rel="noopener noreferrer">
+	<a class="button-link" href="https://orcid.org/0000-0002-7911-9156" target="_blank" rel="noopener noreferrer">
 		<span class="button">
 			<i class="ai ai-orcid"></i>
 			<span>ORCID</span>
@@ -101,160 +103,182 @@ title: Publications
   
   
 <hr style="margin-top:1cm;"> 
-<h2 id="Journal">Journal papers</h2>
-  
-  
-  
-
-
+<h2 id="Journal">Journal Papers</h2>
 
 
 <div class="row">
   <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/Manifolds.png" alt="pic from paper" width="200" >
+    <img src="{{ site.baseurl }}/assets/paper_pics/SCAMPP.gif" alt="pic from paper" height="130" >
   </div>
   <div class="column right">
-	<em>Guaranteed Reachability on Riemannian Manifolds for Unknown Nonlinear Systems</em> <br>
-	<strong>Taha Shafa</strong>, Melkior Ornik <br>
-	<!--a href="" target="_blank" rel="noopener noreferrer"-->Submitted to and currently under review by IEEE Transactions on Automatic Control<!--/a-->, 2024 <br>
+	<em>SCAMPP: Scaling Alignment-Based Phylogenetic Placement to Large Trees</em> <br>
+	<strong>Eleanor Wedell</strong>, Yirong Cai, Tandy Warnow <br>
+	<a href="https://ieeexplore.ieee.org/document/9763324" target="_blank" rel="noopener noreferrer">IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB)</a>, 2023 <br>
 	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('network-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('network-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Guaranteed_Reachability_on_Riemannian_Manifolds_for_Unknown_Nonlinear_Systems_v1.pdf" target="_blank" rel="noopener noreferrer">
+		<a class="button-link" onclick="toggleDisplay('SCAMPP-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('SCAMPP-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/SCAMPP_Scaling_Alignment-Based_Phylogenetic_Placement_to_Large_Trees.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Network-Resilience" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fab fa-github"></i> Code</span>
-		</a-->
-		<a class="button-link" href="https://arxiv.org/abs/2404.09850" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
-		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='Guaranteed Reachability on Riemannian Manifolds for Unknown Nonlinear Systems' id='' target="_blank" rel="noopener noreferrer">0</a>
-    </div>
-  </div>
-</div>
-<div id="network-abstract" class="abstract">
-    Determining the reachable set for a given nonlinear system is critically important for autonomous trajectory planning for reach-avoid applications and safety critical scenarios. 
-    Providing the reachable set is generally impossible when the dynamics are unknown, so we calculate underapproximations of such sets using local dynamics at a single point and bounds
-    on the rate of change of the dynamics determined from known physical laws. Motivated by scenarios where an adverse event causes an abrupt change in the dynamics, we attempt to
-    determine a provably reachable set of states without knowledge of the dynamics. This paper considers systems which are known to operate on a manifold. Underapproximations are 
-    calculated by utilizing the aforementioned knowledge to derive a guaranteed set of velocities on the tangent bundle of a complete Riemannian manifold that can be reached within a 
-    finite time horizon. We then interpret said set as a control system; the trajectories of this control system provide us with a guaranteed set of reachable states the unknown system 
-    can reach within a given time. The results are general enough to apply on systems that operate on any complete Riemannian manifold. To illustrate the practical implementation of our
-    results, we apply our algorithm to a model of a pendulum operating on a sphere and a three-dimensional rotational system which lives on the abstract set of special orthogonal matrices. 
-	</div>
-<pre id="network-bibtex" class="bibtex">
-@misc{shafa2024guaranteedreachabilityriemannianmanifolds,
-      title={Guaranteed Reachability on Riemannian Manifolds for Unknown Nonlinear Systems}, 
-      author={Taha Shafa and Melkior Ornik},
-      year={2024},
-      eprint={2404.09850},
-      archivePrefix={arXiv},
-      primaryClass={eess.SY},
-      url={https://arxiv.org/abs/2404.09850}, 
-}
-</pre>        
-
-
-
-<div class="row">
-  <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/controller_synthesis.png" alt="pic from paper" width="200" >
-  </div>
-  <div class="column right">
-	<em>Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems</em> <br>
-	Yiming Meng, <strong>Taha Shafa</strong>, Jesse Wei, Melkior Ornik <br>
-	<!--a href="" target="_blank" rel="noopener noreferrer"-->Submitted to and currently under review by IEEE Transactions on Automatic Control<!--/a-->, 2024 <br>
-	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('delay-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('delay-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Online_Learning_and_Control_Synthesis_for_Reachable_Paths_of_Unknown_Nonlinear_Systems_v1.pdf" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
-		</a>
-		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Spacecraft-Resilience" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fab fa-github"></i> Code</span>
-		</a-->
-		<a class="button-link" href="https://arxiv.org/abs/2403.03413" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
-		</a>	
-		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems' target="_blank" rel="noopener noreferrer">0</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12911586867405934236' id='SCAMPP: scaling alignment-based phylogenetic placement to large trees' target="_blank" rel="noopener noreferrer">18</a>
 	</div>
   </div>
 </div>
-<div id="delay-abstract" class="abstract">
-	  In this paper, we present a novel method to drive a nonlinear system to a desired state, with limited a priori knowledge of its dynamic model: local dynamics at a single point and 
-    the bounds on the rate of change of these dynamics. This method synthesizes control actions by utilizing locally learned dynamics along a trajectory, based on data available up to
-    that moment, and known proxy dynamics, which can generate an underapproximation of the unknown system's true reachable set. An important benefit to the contributions of this paper
-    is the lack of knowledge needed to execute the presented control method. We establish sufficient conditions to ensure that a controlled trajectory reaches a small neighborhood of 
-    any provably reachable state within a short time horizon, with precision dependent on the tunable parameters of these conditions. 
+<div id="SCAMPP-abstract" class="abstract">
+  Phylogenetic placement, the problem of placing a "query" sequence into a precomputed phylogenetic "backbone" tree, is useful for constructing large trees, performing taxon 
+  identification of newly obtained sequences, and other applications. The most accurate current methods, such as pplacer and EPA-ng, are based on maximum likelihood and require 
+  that the query sequence be provided within a multiple sequence alignment that includes the leaf sequences in the backbone tree. This approach enables high accuracy but also 
+  makes these likelihood-based methods computationally intensive on large backbone trees, and can even lead to them failing when the backbone trees are very large (e.g., having 
+  50,000 or more leaves). We present SCAMPP (SCaling AlignMent-based Phylogenetic Placement), a technique to extend the scalability of these likelihood-based placement methods 
+  to ultra-large backbone trees. We show that pplacer-SCAMPP and EPA-ng-SCAMPP both scale well to ultra-large backbone trees (even up to 200,000 leaves), with accuracy that 
+  improves on APPLES and APPLES-2, two recently developed fast phylogenetic placement methods that scale to ultra-large datasets. EPA-ng-SCAMPP and pplacer-SCAMPP are available 
+  at https://github.com/cjehry04/PLUSplacer.
 </div>
-<pre class="bibtex" id="delay-bibtex">
-@misc{meng2024onlinelearningcontrolsynthesis,
-      title={Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems}, 
-      author={Yiming Meng and Taha Shafa and Jesse Wei and Melkior Ornik},
-      year={2024},
-      eprint={2403.03413},
-      archivePrefix={arXiv},
-      primaryClass={math.OC},
-      url={https://arxiv.org/abs/2403.03413}, 
-}
-</pre>        
-
-
-
-
-
-<div class="row">
-  <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/unknown_reachability.png" alt="pic from paper" width="200" >
-  </div>
-  <div class="column right">
-	<em>Reachability of Nonlinear Systems with Unknown Dynamics</em> <br>
-	<strong>Taha Shafa</strong>, Melkior Ornik <br>
-	<a href="https://ieeexplore.ieee.org/abstract/document/9764380" target="_blank" rel="noopener noreferrer">IEEE Transactions on Automatic Control (TAC)</a>, 2022 <br>
-	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('integrators-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('integrators-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Reachability_of_Nonlinear_Systems_with_Unknown_Dynamics.pdf" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
-		</a>
-		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Quantitative-Resilience" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fab fa-github"></i> Code</span>
-		</a-->
-		<a class="button-link" href="https://arxiv.org/abs/2108.11045" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
-		</a>	
-		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4983265435710608085' id='Reachability of Nonlinear Systems with Unknown Dynamics' target="_blank" rel="noopener noreferrer">8</a>
-	</div>
-  </div>
-</div>
-<div id="integrators-abstract" class="abstract">
-    Determining the reachable set for a given nonlinear control system is crucial for system control and planning. However, computing such a set is impossible if the system's dynamics
-    are not fully known. This paper is motivated by a scenario where a system suffers an adverse event mid-operation, resulting in a substantial change to the system's dynamics, 
-    rendering them largely unknown. Our objective is to conservatively approximate the system's reachable set solely from its local dynamics at a single point and the bounds on the
-    rate of change of its dynamics. We translate this knowledge about the system dynamics into an ordinary differential inclusion. We then derive a conservative approximation of the
-    velocities available to the system at every system state. An inclusion using this approximation can be interpreted as a control system; the trajectories of the derived control
-    system are guaranteed to be trajectories of the unknown system. To illustrate the practical implementation and consequences of our work, we apply our algorithm to a simplified 
-    model of an unmanned aerial vehicle. 
-</div>
-<pre class="bibtex" id="integrators-bibtex">
-@ARTICLE{9764380,
-  author={Shafa, Taha and Ornik, Melkior},
-  journal={IEEE Transactions on Automatic Control}, 
-  title={Reachability of Nonlinear Systems With Unknown Dynamics}, 
-  year={2023},
-  volume={68},
-  number={4},
-  pages={2407-2414},
-  keywords={Control systems;System dynamics;Trajectory;Vehicle dynamics;Uncertainty;Aerospace electronics;Aerospace control;Aerospace systems;autonomous systems;nonlinear control systems;reachable set computation;uncertain systems},
-  doi={10.1109/TAC.2022.3170855}}
+<pre class="bibtex" id="SCAMPP-bibtex">
+  @article{wedell2022scampp,
+    title={SCAMPP: scaling alignment-based phylogenetic placement to large trees},
+    author={Wedell, Eleanor and Cai, Yirong and Warnow, Tandy},
+    journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+    volume={20},
+    number={2},
+    pages={1417--1430},
+    year={2022},
+    publisher={IEEE}
+  }  
   </pre>
         
+
+
       
+    <div class="row">
+      <div class="column left">
+        <img src="{{ site.baseurl }}/assets/paper_pics/IKC.png" alt="pic from paper" height="175" >
+      </div>
+      <div class="column right">
+      <em>Center-periphery structure in research communities</em> <br>
+      <strong>Eleanor Wedell</strong>, Minhyuk Park, Dmitriy Korobskiy, Tandy Warnow, George Chacko<br>
+      <a href="https://doi.org/10.1162/qss_a_00184" target="_blank" rel="noopener noreferrer">Quantitative Science Studies</a>, 2022 <br>
+      <div class="links">
+        <a class="button-link" onclick="toggleDisplay('IKC-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+        <a class="button-link" onclick="toggleDisplay('IKC-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+        <a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Center-periphery_structure_in_research_communities.pdf" target="_blank" rel="noopener noreferrer">
+          <span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+        </a>
+        <i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17886567727414323311' id='Center-periphery structure in research communities' target="_blank" rel="noopener noreferrer">25</a>
+      </div>
+      </div>
+    </div>
+    <div id="IKC-abstract" class="abstract">
+      Clustering and community detection in networks are of broad interest and have been the subject of extensive research that spans several fields. We are interested in 
+      the relatively narrow question of detecting communities of scientific publications that are linked by citations. These publication communities can be used to identify 
+      scientists with shared interests who form communities of researchers. Building on the well-known k-core algorithm, we have developed a modular pipeline to find 
+      publication communities with center-periphery structure. Using a quantitative and qualitative approach, we evaluate community finding results on a citation network 
+      consisting of over 14 million publications relevant to the field of extracellular vesicles. We compare our approach to communities discovered by the widely used 
+      Leiden algorithm for community finding.
+    </div>
+    <pre class="bibtex" id="IKC-bibtex">
+      @article{wedell2022center,
+        title={Center--periphery structure in research communities},
+        author={Wedell, Eleanor and Park, Minhyuk and Korobskiy, Dmitriy and Warnow, Tandy and Chacko, George},
+        journal={Quantitative Science Studies},
+        volume={3},
+        number={1},
+        pages={289--314},
+        year={2022},
+        publisher={MIT Press One Broadway, 12th Floor, Cambridge, Massachusetts 02142, USA~…}
+      }    
+      </pre>
+            
 
-
-
-
+      
+      <div class="row">
+        <div class="column left">
+          <img src="{{ site.baseurl }}/assets/paper_pics/BSCAMPP.png" alt="pic from paper" width="350" >
+        </div>
+        <div class="column right">
+        <em>BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences</em> <br>
+        <strong>Eleanor Wedell</strong>, Chengze Shen, Tandy Warnow <br>
+        <a href="https://doi.org/10.1101/2022.10.26.513936" target="_blank" rel="noopener noreferrer">Submitted and Under Review</a>, 2024 <br>
+        <div class="links">
+          <a class="button-link" onclick="toggleDisplay('BSCAMPP-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+          <a class="button-link" onclick="toggleDisplay('BSCAMPP-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+          <a class="button-link" href="{{ site.baseurl }}/assets/PDFs/BSCAMPP.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+          </a>
+          <!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Quantitative-Resilience" target="_blank" rel="noopener noreferrer">
+            <span class="button"><i class="fab fa-github"></i> Code</span>
+          </a-->
+          <i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6439494667752595507' id='BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences' target="_blank" rel="noopener noreferrer">1</a>
+        </div>
+        </div>
+      </div>
+      <div id="BSCAMPP-abstract" class="abstract">
+        Phylogenetic placement, the problem of placing sequences into phylogenetic trees, has been limited either by the number of sequences placed in a single 
+        run or by the size of the placement tree. The most accurate scalable phylogenetic placement method with respect to the number of query sequences placed, 
+        EPA-ng (Barbera et al., 2019), has a runtime that scales sub-linearly to the number of query sequences. However, larger phylogenetic trees cause an 
+        increase in EPA-ng's memory usage, limiting the method to placement trees of up to 10,000 sequences. Our recently designed SCAMPP (Wedell et al., 2021) 
+        framework has been shown to scale EPA-ng to larger placement trees of up to 200,000 sequences by building a subtree for the placement of each query 
+        sequence. The approach of SCAMPP does not take advantage of EPA-ng's parallel efficiency since it only places a single query for each run of EPA-ng. 
+        Here we present BATCH-SCAMPP, a new technique that overcomes this barrier and enables EPA-ng and other phylogenetic placement methods to scale to 
+        ultra-large backbone trees and many query sequences. BATCH-SCAMPP is freely available at https://github.com/ewedell/BSCAMPP_code.
+      </div>
+      <pre class="bibtex" id="BSCAMPP-bibtex">
+        @article{wedell2022batch,
+          title={BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences},
+          author={Wedell, Eleanor and Shen, Chengze and Warnow, Tandy},
+          journal={bioRxiv},
+          pages={2022--10},
+          year={2022},
+          publisher={Cold Spring Harbor Laboratory}
+        }        
+        </pre>
+                    
+        <div class="row">
+          <div class="column left">
+            <img src="{{ site.baseurl }}/assets/paper_pics/TIPP3.png" alt="pic from paper" width="350" >
+          </div>
+          <div class="column right">
+          <em>TIPP3 and TIPP3-fast: Improved Abundance Profiling in Metagenomics</em> <br>
+          Chengze Shen, <strong>Eleanor Wedell</strong>, Mihai Pop, Tandy Warnow <br>
+          <a href="https://doi.org/10.1101/2024.10.28.620576" target="_blank" rel="noopener noreferrer">Submitted and Under Review</a>, 2024 <br>
+          <div class="links">
+            <a class="button-link" onclick="toggleDisplay('TIPP3-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+            <a class="button-link" onclick="toggleDisplay('TIPP3-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+            <a class="button-link" href="{{ site.baseurl }}/assets/PDFs/TIPP3.pdf" target="_blank" rel="noopener noreferrer">
+              <span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+            </a>
+            <!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Quantitative-Resilience" target="_blank" rel="noopener noreferrer">
+              <span class="button"><i class="fab fa-github"></i> Code</span>
+            </a-->
+            <i class="ai ai-google-scholar"></i> Cited by <a href='' id='TIPP3 and TIPP3-fast: Improved Abundance Profiling in Metagenomics' target="_blank" rel="noopener noreferrer">0</a>
+          </div>
+          </div>
+        </div>
+        <div id="TIPP3-abstract" class="abstract">
+          We present TIPP3 and TIPP3-fast, new tools for abundance profiling in metagenomic datasets. Like its 
+          predecessor, TIPP2, the TIPP3 pipeline uses a maximum likelihood approach to place reads into labeled 
+          taxonomies using marker genes, but it achieves superior accuracy to TIPP2 by enabling the use of much 
+          larger taxonomies through improved algorithmic techniques. We show that TIPP3 outperforms leading 
+          methods for abundance profiling in two important contexts: when reads come from genomes not already 
+          in a public database (i.e., novel genomes) and when reads contain sequencing errors. We also show 
+          that TIPP3-fast has slightly lower accuracy than TIPP3, but is still more accurate than other leading 
+          methods and uses a small fraction of TIPP3's runtime. Additionally, we highlight the potential 
+          benefits of restricting abundance profiling methods to those reads that map to marker genes (i.e., 
+          using a filtered marker-gene based analysis), which we show typically improves accuracy. TIPP3 is 
+          freely available at https://github.com/c5shen/TIPP3.
+        </div>
+        <pre class="bibtex" id="TIPP3-bibtex">
+          @article{shen2024tipp3,
+            title={TIPP3 and TIPP3-fast: Improved Abundance Profiling in Metagenomics},
+            author={Shen, Chengze and Wedell, Eleanor and Pop, Mihai and Warnow, Tandy},
+            journal={bioRxiv},
+            pages={2024--10},
+            year={2024},
+            publisher={Cold Spring Harbor Laboratory}
+          }                 
+          </pre>
+                      
+  
   
 <hr style="margin-top:1cm;">
 <h2 id="Peer">Peer-reviewed conference papers</h2>
@@ -263,252 +287,169 @@ title: Publications
 
 <div class="row">
   <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/sys_id_reachable_sets.png" alt="pic from paper" width="200" >
+    <img src="{{ site.baseurl }}/assets/paper_pics/pplacer-XR.webp" alt="pic from paper" width="300" >
   </div>
   <div class="column right">
-    <em>Identifying Single-Input Linear System Dynamics from Reachable Sets</em><br>
-    <strong>Taha Shafa</strong>, Roy Dong, Melkior Ornik<br>
-    <a href="https://ieeexplore.ieee.org/abstract/document/10384274" target="_blank" rel="noopener noreferrer"-->IEEE Conference on Decision and Control (CDC)</a>, 2023 <br>
+    <em>Scalable and Accurate Phylogenetic Placement Using pplacer-XR</em><br>
+    <strong>Eleanor Wedell</strong>, Yirong Cai, Tandy Warnow<br>
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-74432-8_7" target="_blank" rel="noopener noreferrer"-->Algorithms for Computational Biology (AlCoB)</a>, 2021 <br>
 	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('CDC23-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('CDC23-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Identifying_Single_Input_Linear_System_Dynamics_from_Reachable_Sets.pdf" target="_blank" rel="noopener noreferrer">
+		<a class="button-link" onclick="toggleDisplay('pplacer-XR-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('pplacer-XR-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/pplacer-XR.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fab fa-github"></i> Code</span>
-		</a-->
-		<a class="button-link" href="https://arxiv.org/abs/2309.04340" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="ai ai-arxiv"></i> ArXiv</span>
-		</a>	
-		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Learning to Provably Satisfy High Relative Degree Constraints for Black-Box Systems' target="_blank" rel="noopener noreferrer">0</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?cites=11462105373143681199&as_sdt=400005&sciodt=0,14&hl=en' id='Scalable and Accurate Phylogenetic Placement Using pplacer-XR' target="_blank" rel="noopener noreferrer">10</a>
 	</div>
   </div>
 </div>
-<div id="CDC23-abstract" class="abstract">
-    This paper is concerned with identifying linear system dynamics without the knowledge of individual system trajectories, but from the knowledge of the system's reachable sets observed
-    at different times. Motivated by a scenario where the reachable sets are known from partially transparent manufacturer specifications or observations of the collective behavior of
-    adversarial agents, we aim to utilize such sets to determine the unknown system's dynamics. The paper has two contributions. Firstly, we show that the sequence of the system's 
-    reachable sets can be used to uniquely determine the system's dynamics for asymmetric input sets under some generic assumptions, regardless of the system's dimensions. We also prove
-    the same property holds up to a sign change for two-dimensional systems where the input set is symmetric around zero. Secondly, we present an algorithm to determine the system's 
-    dynamics. We apply and verify the developed theory and algorithms on an unknown band-pass filter circuit solely provided the unknown system's reachable sets over a finite observation period.
+<div id="pplacer-XR-abstract" class="abstract">
+  Phylogenetic placement, the problem of placing a sequence into a precomputed phylogenetic “backbone” tree, is 
+  useful for constructing large trees, performing taxon identification of newly obtained sequences, and other 
+  applications. The most accurate current method, pplacer, performs the placement using maximum likelihood but 
+  fails frequently on backbone trees with 5000 sequences. We show a simple technique, pplacer-XR (pplacer-eXtra 
+  Range), that extends pplacer to large datasets. We show, using challenging large datasets, that pplacer-XR 
+  provides the accuracy of pplacer and the scalability to ultra-large datasets of a leading fast phylogenetic 
+  placmement method, APPLES. pplacer-XR is available in open source form on github.
 </div>
-<div id="CDC23-bibtex" class="bibtex">
+<div id="pplacer-XR-bibtex" class="bibtex">
 <pre><code>
-@INPROCEEDINGS{10384274,
-  author={Shafa, Taha and Dong, Roy and Ornik, Melkior},
-  booktitle={2023 62nd IEEE Conference on Decision and Control (CDC)}, 
-  title={Identifying Single-Input Linear System Dynamics from Reachable Sets}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={3527-3532},
-  keywords={Linear systems;Band-pass filters;Maximum likelihood detection;System dynamics;Heuristic algorithms;Nonlinear filters;Filtering theory},
-  doi={10.1109/CDC49753.2023.10384274}}
+  @inproceedings{wedell2021scalable,
+    title={Scalable and accurate phylogenetic placement using pplacer-XR},
+    author={Wedell, Eleanor and Cai, Yirong and Warnow, Tandy},
+    booktitle={International Conference on Algorithms for Computational Biology},
+    pages={94--105},
+    year={2021},
+    organization={Springer}
+  }  
 </code></pre>
 </div>
 
 
 <div class="row">
   <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/maximal_ellipse.png" alt="pic from paper" width="200" >
+    <img src="{{ site.baseurl }}/assets/paper_pics/WABI.png" alt="pic from paper" width="300" >
   </div>
   <div class="column right">
-    <em>Maximal Ellipsoid Method for Guaranteed Reachability of Unknown Fully Actuated Systems</em><br>
-    <strong>Taha Shafa</strong>, Melkior Ornik <br>
-    <a href="https://ieeexplore.ieee.org/abstract/document/9992407" target="_blank" rel="noopener noreferrer"-->IEEE Conference on Decision and Control (CDC)</a>, 2022 <br>
+    <em>BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences (Abstract)</em><br>
+    <strong>Eleanor Wedell</strong>, Chengze Shen, Tandy Warnow<br>
+    <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.WABI.2023.3" target="_blank" rel="noopener noreferrer"-->In 23rd International Workshop on Algorithms in Bioinformatics (WABI)</a>, 2023 <br>
 	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('maximal-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('maximal-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Maximal_Ellipsoid_Method_for_Guaranteed_Reachability_of_Unknown_Fully_Actuated_Systems.pdf" target="_blank" rel="noopener noreferrer">
+		<a class="button-link" onclick="toggleDisplay('WABI-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('WABI-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/WABI.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<!--a class="button-link" href="https://github.com/labicon/POLICEd-RL" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fab fa-github"></i> Code</span>
-		</a-->
-		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13882103573082338547' id='Maximal Ellipsoid Method for Guaranteed Reachability of Unknown Fully Actuated Systems' target="_blank" rel="noopener noreferrer">2</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='WABI' target="_blank" rel="noopener noreferrer">0</a>
 	</div>
   </div>
 </div>
-<div id="maximal-abstract" class="abstract">
-    In the face of an adverse event, autonomous systems may undergo abrupt changes in their dynamics. In such an event, systems should be able to determine their continuing capabilities to then
-    execute a provably completable task. This paper focuses on the scenario of a change in the system dynamics following an adverse event, aiming to determine the system's guaranteed performance
-    capabilities by finding a set of states that are provably reachable by the system. While it is obviously impossible to exactly determine the reachable set without full knowledge of the
-    system dynamics, we present a method of determining its under-approximation while assuming only partial knowledge of the system structure. Our technical approach relies on showing that
-    an intersection of infinitely many ellipsoids — available velocity sets for each system consistent with the partial knowledge of the dynamics — is the same as an intersection of some 
-    finite collection of ellipsoids. This result enables us to find a maximal ellipsoid lying in such an intersection, yielding a set of velocities that the system is provably able to pursue
-    regardless of its exact dynamics.
+<div id="WABI-abstract" class="abstract">
+  Phylogenetic placement is the problem of placing one or more query sequences into a phylogenetic "backbone" 
+  tree, which may be a maximum likelihood tree on a multiple sequence alignment for a single gene, a taxonomy 
+  with leaves labeled by sequences for a single gene [Nidhi Shah et al., 2021], or a species tree [Jiang et al., 
+  2023]. When the backbone tree is a tree estimated on a single gene, the most accurate techniques for 
+  phylogenetic placement are likelihood-based, and can be computationally intensive when the backbone trees are 
+  large [Chu and Warnow, 2023]. Phylogenetic placement into gene trees occurs when updating existing gene trees 
+  with newly observed sequences, but can also be applied in the "bulk" context, where many sequences are placed 
+  at the same time into the backbone tree. For example, phylogenetic placement can be used to taxonomically 
+  characterize shotgun sequencing reads generated for an environmental sample in metagenomic analysis [Nidhi 
+  Shah et al., 2021; Barbera et al., 2019]. The two most well known maximum likelihood phylogenetic placement 
+  methods are pplacer [Chu and Warnow, 2023] and EPA-ng [Barbera et al., 2019]. Of these two, EPA-ng is 
+  optimized for scaling the number of query sequences and is capable of placing millions of sequences into 
+  phylogenetic trees of up to a few thousand sequences [Barbera et al., 2019], and achieves sublinear runtime 
+  in the number of query sequences (see Figure 2 from [Balaban et al., 2022]). Previously we introduced the 
+  SCAMPP framework [Wedell et al., 2022] to enable both pplacer and EPA-ng to perform phylogenetic placement 
+  into ultra-large backbone trees, and we demonstrated its utility for placing into backbone trees with up to 
+  200,000 sequences. By using maximum likelihood methods pplacer or EPA-ng within the SCAMPP framework, the 
+  resulting placements are more accurate than with APPLES-2 [Balaban et al., 2022], with the most notable 
+  accuracy improvement for fragmentary sequences, and are computationally similar for single query sequence 
+  placement [Wedell et al., 2022]. However, SCAMPP was designed to incrementally update a large tree, one 
+  query sequence at a time, and was not optimized for the other uses of phylogenetic placement, where batch 
+  placement of many sequencing reads is required. Here we introduce BATCH-SCAMPP, a technique that improves 
+  scalability in both dimensions: the number of query sequences being placed into the backbone tree and the 
+  size of the backbone tree. Furthermore, BATCH-SCAMPP is specifically designed to improve EPA-ng's 
+  scalability to large backbone trees. Although BATCH-SCAMPP is based on SCAMPP, it uses a substantially 
+  modified design in order to be able to take advantage of EPA-ng's ability to place many query sequences 
+  efficiently. The BATCH-SCAMPP method operates by allowing the input set of query sequences to suggest and 
+  then vote on placement subtrees, thus enabling many query sequences to select the same placement subtree. 
+  We pair BATCH-SCAMPP with EPA-ng to explore the capability of this approach for scaling to many query 
+  sequences. We show that this combination of techniques (which we call BSCAMPP+EPA-ng, or BSCAMPP(e)) not 
+  only provides high accuracy and scalability to large backbone trees, matching that of SCAMPP used with 
+  EPA-ng (i.e., SCAMPP(e)), but also achieves the goal of scaling sublinearly in the number of query 
+  sequences. Moreover, it is much more scalable than EPA-ng and faster than SCAMPP+EPA-ng: when placing 
+  10,000 sequences into a backbone tree of 50,000 leaves, EPA-ng is unable to run due to memory issues, 
+  SCAMPP+EPA-ng requires 1421 minutes, and BSCAMPP(e) places all sequences in 7 minutes (all given the 
+  same computational resources). Figure 1 gives an example of this performance advantage on the nt78 [Chu 
+  and Warnow, 2023] simulated dataset. 
 </div>
-<div id="maximal-bibtex" class="bibtex">
+<div id="WABI-bibtex" class="bibtex">
 <pre><code>
-@INPROCEEDINGS{9992407,
-  author={Shafa, Taha and Ornik, Melkior},
-  booktitle={2022 IEEE 61st Conference on Decision and Control (CDC)}, 
-  title={Maximal Ellipsoid Method for Guaranteed Reachability of Unknown Fully Actuated Systems}, 
-  year={2022},
-  volume={},
-  number={},
-  pages={5002-5007},
-  keywords={Actuators;Uncertainty;System dynamics;Autonomous systems;Perturbation methods;Task analysis;Ellipsoids},
-  doi={10.1109/CDC51059.2022.9992407}}
+  @InProceedings{wedell_et_al:LIPIcs.WABI.2023.3,
+    author =	{Wedell, Eleanor and Shen, Chengze and Warnow, Tandy},
+    title =	{{BATCH-SCAMPP: Scaling Phylogenetic Placement Methods to Place Many Sequences}},
+    booktitle =	{23rd International Workshop on Algorithms in Bioinformatics (WABI 2023)},
+    pages =	{3:1--3:2},
+    series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+    ISBN =	{978-3-95977-294-5},
+    ISSN =	{1868-8969},
+    year =	{2023},
+    volume =	{273},
+    editor =	{Belazzougui, Djamal and Ouangraoua, A\"{i}da},
+    publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+    address =	{Dagstuhl, Germany},
+    URL =		{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.WABI.2023.3},
+    URN =		{urn:nbn:de:0030-drops-186296},
+    doi =		{10.4230/LIPIcs.WABI.2023.3},
+    annote =	{Keywords: Phylogenetic Placement, EPA-ng, Phylogenetics}
+  }
 </code></pre>
 </div>
 
 
 <div class="row">
   <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/vibration_mitigation.png" alt="pic from paper" width="200" >
+    <img src="{{ site.baseurl }}/assets/paper_pics/FastEnsemble.webp" alt="pic from paper" width="300" >
   </div>
   <div class="column right">
-    <em>High-Frequency Vibration Reduction for Unmanned Ground Vehicles on Unstructured Terrain</em><br>
-    Hamza El-Kebir, <strong>Taha Shafa</strong>, Amartya Purushottam, Melkior Ornik, Ahmet Soylemezoglu <br>
-    <a href="https://link.springer.com/chapter/10.1007/978-3-030-98260-7_5" target="_blank" rel="noopener noreferrer">8<sup>th</sup> International Conference on Modelling and Simulation for Autonomous Systems</a>, 2021 <br>
+    <em>FastEnsemble: A new scalable ensemble clustering method</em><br>
+    Yasamin Tabatabaee, <strong>Eleanor Wedell</strong>, Minhyuk Park, Tandy Warnow<br>
+    <a href="https://doi.org/10.48550/arXiv.2409.02077" target="_blank" rel="noopener noreferrer"-->Complex Networks and their Applications (CNA)</a>, 2024 <br>
 	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('vibration-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('vibration-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/High_Frequency_Vibration_Reduction_for_Unmanned_Ground_Vehicles_on_Unstructured_Terrain.pdf" target="_blank" rel="noopener noreferrer">
+		<a class="button-link" onclick="toggleDisplay('FastEnsemble-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('FastEnsemble-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/FastEnsemble.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7734426462927221701' id='High-Frequency Vibration Reduction for Unmanned Ground Vehicles on Unstructured Terrain<' target="_blank" rel="noopener noreferrer">2</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='FastEnsemble: A new scalable ensemble clustering method' target="_blank" rel="noopener noreferrer">0</a>
 	</div>
   </div>
 </div>
-<div id="vibration-abstract" class="abstract">
-    High-frequency vibrations encountered during land transit of sensitive payloads have long been known to be a possible cause of payload damage and subsequent mission failure. As sensors
-    are also adversely affected by this phenomenon, we aim to provide a solution to minimize high-frequency noise vibrations without reliance on high performance sensing. Naturally, this
-    presents the need for on-board adaptive control capabilities to reduce sensor noise and damage to secured payloads. Thus, we present a novel approach to reducing high-frequency vibration
-    content (HVC) encountered during transit, with the explicit goal of maintaining a desired vehicle speed while keeping high-frequency vibrations below a given threshold regardless of 
-    the terrain characteristics. To this end, we present a two-stage solution consisting of a vibration-compensating speed controller and an optimal tracking controller for control command
-    determination. The proposed controller is implemented on a Clearpath Jackal unmanned ground vehicle and subjected to a priori unknown mixed terrain types. Experiments performed on these
-    varying terrains show that the proposed control architecture is able to adjust the desired robot trajectory to remain below the vibration thresholds defined by the mission objective.
+<div id="FastEnsemble-abstract" class="abstract">
+  Many community detection algorithms are stochastic in nature, and their output can vary based on different input 
+  parameters and random seeds. Consensus clustering methods, such as FastConsensus and ECG, combine clusterings 
+  from multiple runs of the same clustering algorithm, in order to improve stability and accuracy. In this study 
+  we present a new consensus clustering method, FastEnsemble, and show that it provides advantages over both 
+  FastConsensus and ECG. Furthermore, FastEnsemble is designed for use with any clustering method, and we show 
+  results using \ourmethod with Leiden optimizing modularity or the Constant Potts model. FastEnsemble is 
+  available in Github at https://github.com/ytabatabaee/fast-ensemble.
 </div>
-<div id="vibration-bibtex" class="bibtex">
+<div id="FastEnsemble-bibtex" class="bibtex">
 <pre><code>
-  @InProceedings{10.1007/978-3-030-98260-7_5,
-  author="El-Kebir, Hamza
-  and Shafa, Taha
-  and Purushottam, Amartya
-  and Ornik, Melkior
-  and Soylemezoglu, Ahmet",
-  title="High-Frequency Vibration Reduction for Unmanned Ground Vehicles on Unstructured Terrain",
-  booktitle="Modelling and Simulation  for Autonomous Systems",
-  year="2022",
-  publisher="Springer International Publishing",
-  address="Cham",
-  pages="74--92",
-  isbn="978-3-030-98260-7"
-}
-</code></pre>
-</div> 
-      
-  
-  
-<div class="row">
-  <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/2dof_laminate_leg.png" alt="pic from paper" width="200" >
-  </div>
-  <div class="column right">
-    <em>Design of a Two DOF Laminate Leg Transmission for Creating Walking Robot Platforms</em><br>
-    Benjamin D. Shuch, <strong>Taha Shafa</strong>, Eric Rogers, Daniel Aukes <br>
-    <a href="https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2019/V05BT07A046/1070069" target="_blank" rel="noopener noreferrer">20<sup>th</sup> ASME 2019 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference</a>, 2019 <br>
-	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('ASME-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('ASME-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/IDET_C_Laminate_Quadruped_Transmission.pdf" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
-		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Design of a Two DOF Laminate Leg Transmission for Creating Walking Robot Platforms' target="_blank" rel="noopener noreferrer">0</a>
-	</div>
-  </div>
-</div>
-<div id="ASME-abstract" class="abstract">
-  In this article we present a low-cost, two degree-of-freedom laminate robot transmission for legged locomotion applications. This transmission is specifically applied
-    in the design of a quadrupedal robot, and has the potential to be used in other multi-legged systems. It offers a complex control space with a variety of different
-    programmable gait trajectories, while leveraging low-cost linkages made using laminate approaches. The two-degree-of-freedom kinematics of the leg are subsequently
-    modeled in Python, and the workspace of the robot is then experimentally verified on an initial quadrupedal design. Critical design considerations include the laminate
-    design, the rigidity of the materials that make up the laminate, and the range of motion the device can undergo.
-</div>
-<div id="ASME-bibtex" class="bibtex">
-<pre><code>
-@proceedings{10.1115/DETC2019-98100,
-    author = {Shuch, Benjamin D. and Shafa, Taha and Rogers, Eric and Aukes, Daniel M.},
-    title = "{Design of a Two DOF Laminate Leg Transmission for Creating Walking Robot Platforms}",
-    volume = {Volume 5B: 43rd Mechanisms and Robotics Conference},
-    series = {International Design Engineering Technical Conferences and Computers and Information in Engineering Conference},
-    pages = {V05BT07A046},
-    year = {2019},
-    doi = {10.1115/DETC2019-98100},
-    url = {https://doi.org/10.1115/DETC2019-98100},
-    eprint = {https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-pdf/IDETC-CIE2019/59247/V05BT07A046/6453830/v05bt07a046-detc2019-98100.pdf},
-}
-</code></pre>
-</div>   
-        
-      
- 
- 
-  
-  
-  
-<hr style="margin-top:1cm;">
-<h2 id="Nonpeer">Other conference papers</h2>
-
-
-<div class="row">
-  <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/verse_acas_xu.png" alt="pic from paper" width="200" >
-  </div>
-  <div class="column right">
-    <em>Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu</em><br>
-    Gokul Puthumanaillam, Manav Vora, <strong>Taha Shafa</strong>, Yangge Li, Melkior Ornik, Sayan Mitra <br>
-    <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2024-1168" target="_blank" rel="noopener noreferrer"-->AIAA Scitech</a>, 2024 <br>
-	<div class="links">
-		<a class="button-link" onclick="toggleDisplay('AAS-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
-		<a class="button-link" onclick="toggleDisplay('AAS-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Verse_nnenum.pdf" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
-		</a>	
-		<a class="button-link" href="https://github.com/gokulp01/verse-nnenum-int" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fab fa-github"></i> Code</span>
-		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu' target="_blank" rel="noopener noreferrer">0</a>
-	</div>
-  </div>
-</div>
-<div id="AAS-abstract" class="abstract">
-This paper introduces a novel approach to verification of neural network controlled systems, combining the capabilities of the nnenum framework with the Verse toolkit. 
-    Addressing a critical gap in the traditional verification process which often does not include the system dynamics analysis while computing the neural network outputs,
-    our integrated methodology enhances the precision and safety of decision-making in complex dynamical systems. By iteratively verifying neural network decisions and
-    propagating system states, we maintain an accurate representation of the system’s behavior over time, a vital aspect in ensuring operational safety. Our approach is
-    exemplified through the verification of the neural network controlled Airborne Collision Avoidance System for Unmanned Aircraft (ACAS Xu). We demonstrate that the
-    integration of nnenum and Verse not only accurately computes reachable sets for the UAS but also effectively handles the inherent complexity and nonlinearity of the system.
-    The resulting analysis provides a nuanced understanding of the system’s behavior under varying operational conditions and interactions with other agents, such as
-    intruder aircraft. The comprehensive simulations conducted as part of this study reveal the robustness of our approach, validating its effectiveness in verifying the
-    safety and reliability of learned controllers. Furthermore, the scalability and adaptability of our methodology suggest its broader applicability in various autonomous
-    systems requiring rigorous safety verification.
-</div>
-<div id="AAS-bibtex" class="bibtex">
-<pre><code>
-  @inbook{doi:10.2514/6.2024-1168,
-  author = {Gokul Puthumanaillam and Manav Ketan Vora and Taha Shafa and Yangge Li and Melkior Ornik and Sayan Mitra},
-  title = {Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu},
-  booktitle = {AIAA SCITECH 2024 Forum},
-  chapter = {},
-  pages = {},
-  doi = {10.2514/6.2024-1168},
-  URL = {https://arc.aiaa.org/doi/abs/10.2514/6.2024-1168},
-  eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.2024-1168}
-}
+  @article{tabatabaee2024fastensemble,
+    title={FastEnsemble: A new scalable ensemble clustering method},
+    author={Tabatabaee, Yasamin and Wedell, Eleanor and Park, Minhyuk and Warnow, Tandy},
+    journal={arXiv preprint arXiv:2409.02077},
+    year={2024}
+  }  
 </code></pre>
 </div>
-
-
 
 
 <hr style="margin-top:1cm;">
-<h2 id="Theses">Theses</h2>
+<h2 id="MS Thesis">Masters Thesis</h2>
 
-  
+<!--
 <div class="row">
   <div class="column left">
     <img src="{{ site.baseurl }}/assets/paper_pics/car.png" alt="pic from paper" width="200" >
@@ -517,19 +458,20 @@ This paper introduces a novel approach to verification of neural network control
     <em>Reachable Predictive Control: A Novel Control Algorithm for Nonlinear Systems with Unknown Dynamics (Currently being written)</em><br>
     <strong>Taha Shafa</strong> &nbsp;&nbsp;&nbsp; Advisor: Melkior Ornik <br>
     Doctoral thesis. <a href="https://illinois.edu/" target="_blank" rel="noopener noreferrer">University of Illinois Urbana-Champaign</a>, 2025 <br>
-	<div class="links">
+	<div class="links"> -->
 		<!--a class="button-link" onclick="toggleDisplay('PhD-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a-->
 		<!--a class="button-link" onclick="toggleDisplay('PhD-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a-->
 		<!--a class="button-link" href="{{ site.baseurl }}/assets/PDFs/PhD_Thesis.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a-->		
-		<a class="button-link" href="{{site.baseurl}}/assets/Slides/Prelim_Slides.pdf" target="_blank" rel="noopener noreferrer">
+    <!--
+  		<a class="button-link" href="{{site.baseurl}}/assets/Slides/Prelim_Slides.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-powerpoint"></i> Slides</span>
 		</a>
 		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Reachable Predictive Control: A Novel Control Algorithm for Nonlinear Systems with Unknown Dynamics' target="_blank" rel="noopener noreferrer">0</a>
 	</div>
   </div>
-</div>
+</div> -->
 <!--div id="PhD-abstract" class="abstract">
   After docking to the International Space Station (ISS), the Nauka module suffered a software error causing its thrusters to misfire.
   In turn, these uncontrolled thrusters rotated the whole space station by 540° before being counteracted by other thrusters of the ISS.
@@ -555,49 +497,41 @@ This paper introduces a novel approach to verification of neural network control
 
 <div class="row">
   <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/balancing_robot.png" alt="pic from paper" width="200" >
+    <img src="{{ site.baseurl }}/assets/paper_pics/MSTHESIS.png" alt="pic from paper" width="500" >
   </div>
   <div class="column right">
-    <em>Design, Model, and Control of a Low-cost 3 Degree of Freedom Balancing Laminate Leg with an Actively Controlled Ankle Using Fundamental Controls Concepts</em><br>
-    <strong>Taha Shafa</strong> &nbsp;&nbsp;&nbsp; Advisor: Daniel Aukes <br>
-    Master thesis. <a href="https://www.asu.edu/" target="_blank" rel="noopener noreferrer">Arizona State Univesrity</a>, 2020 <br>
+    <em>SCAMPP: Scalable alignment-based phylogenetic placement</em><br>
+    <strong>Eleanor Wedell</strong> &nbsp;&nbsp;&nbsp; Advisor: Professor Tandy Warnow <br>
+    Master thesis. <a href="https://www.ideals.illinois.edu/items/124753" target="_blank" rel="noopener noreferrer">University of Illinois Urbana-Champaign</a>, 2022 <br>
 	<div class="links">
 		<a class="button-link" onclick="toggleDisplay('MS-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
 		<a class="button-link" onclick="toggleDisplay('MS-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
-		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Masters_Thesis_Biped_Design.pdf" target="_blank" rel="noopener noreferrer">
+		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/WEDELL-THESIS-2022.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11817910510869185927&as_sdt=5' id='Design, Model, and Control of a Low-cost 3 Degree of Freedom Balancing Laminate Leg with an Actively Controlled Ankle Using Fundamental Controls Concepts' target="_blank" rel="noopener noreferrer">1</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='SCAMPP: Scalable alignment-based phylogenetic placement' target="_blank" rel="noopener noreferrer">0</a>
 	</div>
   </div>
 </div>
 <div id="MS-abstract" class="abstract">
-  This thesis introduces a new robotic leg design with three degrees of freedom that
-  can be adapted for both bipedal and quadrupedal locomotive systems, and serves as
-  a blueprint for designers attempting to create low cost robot legs capable of balancing
-  and walking. Currently, bipedal leg designs are mostly rigid and have not strongly
-  taken into account the advantages/disadvantages of using an active ankle, as opposed
-  to a passive ankle, for balancing. This design uses low-cost compliant materials, but
-  the materials used are thick enough to mimic rigid properties under low stresses, so
-  this paper will treat the links as rigid materials. A new leg design has been created
-  that contains three degrees of freedom that can be adapted to contain either a passive
-  ankle using springs, or an actively controlled ankle using an additional actuator. This
-  thesis largely aims to focus on the ankle and foot design of the robot and the torque
-  and speed requirements of the design for motor selection. The dynamics of the system,
-  including height, foot width, weight, and resistances will be analyzed to determine
-  how to improve design performance. Model-based control techniques will be used to
-  control the angle of the leg for balancing. In doing so, it will also be shown that it
-  is possible to implement model-based control techniques on robots made of laminate
-  materials.
+  Phylogenetic placement, the problem of placing a "query" sequence into a precomputed phylogenetic "backbone” tree, is useful for constructing large trees, 
+  performing taxon identification of newly obtained sequences, and other applications. The most accurate current methods, such as pplacer and EPA-ng, are 
+  based on maximum likelihood and require that the query sequence be provided within a multiple sequence alignment that includes the leaf sequences in the 
+  backbone tree. This approach enables high accuracy but also makes these likelihood-based methods computationally intensive on large backbone trees, and 
+  can even lead to them failing when the backbone trees are very large (eg, having 50,000 or more leaves). We present SCAMPP (SCAlable alignMent-based 
+  Phylogenetic Placement), a technique to extend the scalability of these likelihood-based placement methods to ultra-large backbone trees. We show that 
+  pplacer-SCAMPP and EPA-ng-SCAMPP both scale well to ultra-large backbone trees (even up to 200,000 leaves), with accuracy that improves on APPLES and 
+  APPLES-2, two recently developed fast phylogenetic placement methods that scale to ultra-large datasets. EPA-ng-SCAMPP and pplacer-SCAMPP are available 
+  at https://github.com/chry04/PLUSplacer.
 </div>
 <div id="MS-bibtex" class="bibtex">
 <pre><code>
-@mastersthesis{shafa2020design,
-  title={Design, Model, and Control of a Low-Cost 3 Degree of Freedom Balancing Laminate Leg with an Actively Controlled Ankle Using Fundamental Controls Concepts},
-  author={Shafa, Taha},
-  year={2020},
-  school={Arizona State University}
-}
+  @phdthesis{wedell2022scampp,
+    title={SCAMPP: Scalable alignment-based phylogenetic placement},
+    author={Wedell, Eleanor},
+    year={2022},
+    school={University of Illinois at Urbana-Champaign}
+  }
 </code></pre>
 </div>  
 
