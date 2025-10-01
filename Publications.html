@@ -63,7 +63,7 @@ title: Publications
 <ul style="margin-top:1cm;">
 	<li> <a style="color:#454545; text-decoration:none;" href="#Journal">Journal Papers</a> </li>
 	<li> <a style="color:#454545; text-decoration:none;" href="#Peer">Peer-Reviewed Conference Papers</a> </li>
-	<li> <a style="color:#454545; text-decoration:none;" href="#MS Theses">MS Thesis</a> </li>
+	<li> <a style="color:#454545; text-decoration:none;" href="#Masters Thesis">Masters Thesis</a> </li>
 </ul>
 
 
@@ -120,7 +120,7 @@ title: Publications
 		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/SCAMPP_Scaling_Alignment-Based_Phylogenetic_Placement_to_Large_Trees.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12911586867405934236' id='SCAMPP: scaling alignment-based phylogenetic placement to large trees' target="_blank" rel="noopener noreferrer">18</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12911586867405934236' id='SCAMPP: scaling alignment-based phylogenetic placement to large trees' target="_blank" rel="noopener noreferrer">19</a>
 	</div>
   </div>
 </div>
@@ -164,7 +164,7 @@ title: Publications
         <a class="button-link" href="{{ site.baseurl }}/assets/PDFs/Center-periphery_structure_in_research_communities.pdf" target="_blank" rel="noopener noreferrer">
           <span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
         </a>
-        <i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17886567727414323311' id='Center-periphery structure in research communities' target="_blank" rel="noopener noreferrer">25</a>
+        <i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17886567727414323311' id='Center-periphery structure in research communities' target="_blank" rel="noopener noreferrer">26</a>
       </div>
       </div>
     </div>
@@ -196,41 +196,33 @@ title: Publications
           <img src="{{ site.baseurl }}/assets/paper_pics/BSCAMPP.png" alt="pic from paper" width="350" >
         </div>
         <div class="column right">
-        <em>BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences</em> <br>
+        <em>BSCAMPP: Batch-Scaled Phylogenetic Placement on Large Trees</em> <br>
         <strong>Eleanor Wedell</strong>, Chengze Shen, Tandy Warnow <br>
-        <a href="https://doi.org/10.1101/2022.10.26.513936" target="_blank" rel="noopener noreferrer">Submitted and Under Review</a>, 2024 <br>
+        <a href="https://doi.org/10.1109/TCBBIO.2025.3562281" target="_blank" rel="noopener noreferrer">IEEE Transactions on Computational Biology and Bioinformatics</a>, 2025 <br>
         <div class="links">
           <a class="button-link" onclick="toggleDisplay('BSCAMPP-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
           <a class="button-link" onclick="toggleDisplay('BSCAMPP-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
           <a class="button-link" href="{{ site.baseurl }}/assets/PDFs/BSCAMPP.pdf" target="_blank" rel="noopener noreferrer">
             <span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
           </a>
-          <!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Quantitative-Resilience" target="_blank" rel="noopener noreferrer">
-            <span class="button"><i class="fab fa-github"></i> Code</span>
-          </a-->
-          <i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6439494667752595507' id='BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences' target="_blank" rel="noopener noreferrer">1</a>
+          <i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4505879241081408106&as_sdt=5' id='BSCAMPP: Batch-Scaled Phylogenetic Placement on Large Trees' target="_blank" rel="noopener noreferrer">2</a>
         </div>
         </div>
       </div>
       <div id="BSCAMPP-abstract" class="abstract">
-        Phylogenetic placement, the problem of placing sequences into phylogenetic trees, has been limited either by the number of sequences placed in a single 
-        run or by the size of the placement tree. The most accurate scalable phylogenetic placement method with respect to the number of query sequences placed, 
-        EPA-ng (Barbera et al., 2019), has a runtime that scales sub-linearly to the number of query sequences. However, larger phylogenetic trees cause an 
-        increase in EPA-ng's memory usage, limiting the method to placement trees of up to 10,000 sequences. Our recently designed SCAMPP (Wedell et al., 2021) 
-        framework has been shown to scale EPA-ng to larger placement trees of up to 200,000 sequences by building a subtree for the placement of each query 
-        sequence. The approach of SCAMPP does not take advantage of EPA-ng's parallel efficiency since it only places a single query for each run of EPA-ng. 
-        Here we present BATCH-SCAMPP, a new technique that overcomes this barrier and enables EPA-ng and other phylogenetic placement methods to scale to 
-        ultra-large backbone trees and many query sequences. BATCH-SCAMPP is freely available at https://github.com/ewedell/BSCAMPP_code.
+        Phylogenetic placement is the problem of placing sequences into a given phylogenetic tree, called a “backbone tree”. EPA-ng and pplacer are the two most accurate phylogenetic placement methods, but both can fail to complete when the backbone tree is very large. Our recently designed SCAMPP framework has been shown to scale both pplacer and EPA-ng to larger backbone trees of up to 180,000 sequences by building a small placement subtree for each query sequence and then using the phylogenetic placement method to place that query sequence into that subtree. However, the technique in SCAMPP produces many placement subtrees (potentially a different one for each query sequence), making it computationally expensive when placing many query sequences. Here we present BSCAMPP (Batch-SCAMPP), a new technique that overcomes this barrier by using the query sequences to select a much smaller number of placement subtrees. We show that BSCAMPP used with EPA-ng is much faster than SCAMPP used with EPA-ng, and scales to ultra-large backbone trees. We also show that BSCAMPP used with pplacer is much faster than SCAMPP used with pplacer, and somewhat more accurate but slower than BSCAMPP used with EPA-ng. BATCH-SCAMPP is freely available at https://github.com/ewedell/BSCAMPP.
       </div>
       <pre class="bibtex" id="BSCAMPP-bibtex">
-        @article{wedell2022batch,
-          title={BATCH-SCAMPP: Scaling phylogenetic placement methods to place many sequences},
-          author={Wedell, Eleanor and Shen, Chengze and Warnow, Tandy},
-          journal={bioRxiv},
-          pages={2022--10},
-          year={2022},
-          publisher={Cold Spring Harbor Laboratory}
-        }        
+      @ARTICLE{10969524,
+        author={Wedell, Eleanor and Shen, Chengze and Warnow, Tandy},
+        journal={IEEE Transactions on Computational Biology and Bioinformatics}, 
+        title={BSCAMPP: Batch-Scaled Phylogenetic Placement on Large Trees}, 
+        year={2025},
+        volume={22},
+        number={4},
+        pages={1593-1605},
+        keywords={Phylogeny;Vegetation;Accuracy;Scalability;Runtime;Testing;Sequential analysis;Memory management;Maximum likelihood estimation;Training;Phylogenetic placement;EPA-ng;microbiome analysis;taxonomic identification;abundance profiling;pplacer},
+        doi={10.1109/TCBBIO.2025.3562281}}   
         </pre>
                     
         <div class="row">
@@ -240,7 +232,7 @@ title: Publications
           <div class="column right">
           <em>TIPP3 and TIPP3-fast: Improved Abundance Profiling in Metagenomics</em> <br>
           Chengze Shen, <strong>Eleanor Wedell</strong>, Mihai Pop, Tandy Warnow <br>
-          <a href="https://doi.org/10.1101/2024.10.28.620576" target="_blank" rel="noopener noreferrer">Submitted and Under Review</a>, 2024 <br>
+          <a href="https://doi.org/10.1371/journal.pcbi.1012593" target="_blank" rel="noopener noreferrer">PLOS Computational Biology</a>, 2025 <br>
           <div class="links">
             <a class="button-link" onclick="toggleDisplay('TIPP3-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
             <a class="button-link" onclick="toggleDisplay('TIPP3-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
@@ -250,38 +242,33 @@ title: Publications
             <!--a class="button-link" href="https://github.com/Jean-BaptisteBouvier/Quantitative-Resilience" target="_blank" rel="noopener noreferrer">
               <span class="button"><i class="fab fa-github"></i> Code</span>
             </a-->
-            <i class="ai ai-google-scholar"></i> Cited by <a href='' id='TIPP3 and TIPP3-fast: Improved Abundance Profiling in Metagenomics' target="_blank" rel="noopener noreferrer">0</a>
+            <i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3308394324546610284&as_sdt=5' id='TIPP3 and TIPP3-fast: Improved Abundance Profiling in Metagenomics' target="_blank" rel="noopener noreferrer">2</a>
           </div>
           </div>
         </div>
         <div id="TIPP3-abstract" class="abstract">
-          We present TIPP3 and TIPP3-fast, new tools for abundance profiling in metagenomic datasets. Like its 
-          predecessor, TIPP2, the TIPP3 pipeline uses a maximum likelihood approach to place reads into labeled 
-          taxonomies using marker genes, but it achieves superior accuracy to TIPP2 by enabling the use of much 
-          larger taxonomies through improved algorithmic techniques. We show that TIPP3 outperforms leading 
-          methods for abundance profiling in two important contexts: when reads come from genomes not already 
-          in a public database (i.e., novel genomes) and when reads contain sequencing errors. We also show 
-          that TIPP3-fast has slightly lower accuracy than TIPP3, but is still more accurate than other leading 
-          methods and uses a small fraction of TIPP3's runtime. Additionally, we highlight the potential 
-          benefits of restricting abundance profiling methods to those reads that map to marker genes (i.e., 
-          using a filtered marker-gene based analysis), which we show typically improves accuracy. TIPP3 is 
-          freely available at https://github.com/c5shen/TIPP3.
+          We present TIPP3 and TIPP3-fast, new tools for abundance profiling in metagenomic datasets. Like its predecessor, TIPP2, the TIPP3 pipeline uses a maximum likelihood approach to place reads into labeled taxonomies using marker genes, but it achieves superior accuracy to TIPP2 by enabling the use of much larger taxonomies through improved algorithmic techniques. We show that TIPP3 is generally more accurate than leading methods for abundance profiling in two important contexts: when reads come from genomes not already in a public database (i.e., novel genomes) and when reads contain sequencing errors. We also show that TIPP3-fast has slightly lower accuracy than TIPP3, but is also generally more accurate than other leading methods and uses a small fraction of TIPP3’s runtime. Additionally, we highlight the potential benefits of restricting abundance profiling methods to those reads that map to marker genes (i.e., using a filtered marker-gene based analysis), which we show typically improves accuracy. TIPP3 is freely available at https://github.com/c5shen/TIPP3.
         </div>
         <pre class="bibtex" id="TIPP3-bibtex">
-          @article{shen2024tipp3,
-            title={TIPP3 and TIPP3-fast: Improved Abundance Profiling in Metagenomics},
-            author={Shen, Chengze and Wedell, Eleanor and Pop, Mihai and Warnow, Tandy},
-            journal={bioRxiv},
-            pages={2024--10},
-            year={2024},
-            publisher={Cold Spring Harbor Laboratory}
-          }                 
+          @article{10.1371/journal.pcbi.1012593,
+              doi = {10.1371/journal.pcbi.1012593},
+              author = {Shen, Chengze AND Wedell, Eleanor AND Pop, Mihai AND Warnow, Tandy},
+              journal = {{PLOS Computational Biology}},
+              publisher = {Public Library of Science},
+              title = {{TIPP3 and TIPP3-fast: Improved abundance profiling in metagenomics}},
+              year = {2025},
+              month = {04},
+              volume = {21},
+              url = {https://doi.org/10.1371/journal.pcbi.1012593},
+              pages = {1-21},
+              number = {4},
+          }                
           </pre>
                       
   
   
 <hr style="margin-top:1cm;">
-<h2 id="Peer">Peer-reviewed conference papers</h2>
+<h2 id="Peer">Peer-Reviewed Conference Papers</h2>
 
 
 
@@ -299,7 +286,7 @@ title: Publications
 		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/pplacer-XR.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?cites=11462105373143681199&as_sdt=400005&sciodt=0,14&hl=en' id='Scalable and Accurate Phylogenetic Placement Using pplacer-XR' target="_blank" rel="noopener noreferrer">10</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='https://scholar.google.com/scholar?cites=11462105373143681199&as_sdt=400005&sciodt=0,14&hl=en' id='Scalable and Accurate Phylogenetic Placement Using pplacer-XR' target="_blank" rel="noopener noreferrer">12</a>
 	</div>
   </div>
 </div>
@@ -412,16 +399,16 @@ title: Publications
     <img src="{{ site.baseurl }}/assets/paper_pics/FastEnsemble.webp" alt="pic from paper" width="300" >
   </div>
   <div class="column right">
-    <em>FastEnsemble: A new scalable ensemble clustering method</em><br>
+    <em>FastEnsemble: A New Scalable Ensemble Clustering Method</em><br>
     Yasamin Tabatabaee, <strong>Eleanor Wedell</strong>, Minhyuk Park, Tandy Warnow<br>
-    <a href="https://doi.org/10.48550/arXiv.2409.02077" target="_blank" rel="noopener noreferrer"-->Complex Networks and their Applications (CNA)</a>, 2024 <br>
+    <a href="https://link.springer.com/chapter/10.1007/978-3-031-82435-7_5" target="_blank" rel="noopener noreferrer"-->Complex Networks and their Applications (CNA)</a>, 2024 <br>
 	<div class="links">
 		<a class="button-link" onclick="toggleDisplay('FastEnsemble-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
 		<a class="button-link" onclick="toggleDisplay('FastEnsemble-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
 		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/FastEnsemble.pdf" target="_blank" rel="noopener noreferrer">
 			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
 		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='FastEnsemble: A new scalable ensemble clustering method' target="_blank" rel="noopener noreferrer">0</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='FastEnsemble: A New Scalable Ensemble Clustering Method' target="_blank" rel="noopener noreferrer">0</a>
 	</div>
   </div>
 </div>
@@ -436,63 +423,69 @@ title: Publications
 </div>
 <div id="FastEnsemble-bibtex" class="bibtex">
 <pre><code>
-  @article{tabatabaee2024fastensemble,
-    title={FastEnsemble: A new scalable ensemble clustering method},
-    author={Tabatabaee, Yasamin and Wedell, Eleanor and Park, Minhyuk and Warnow, Tandy},
-    journal={arXiv preprint arXiv:2409.02077},
-    year={2024}
-  }  
+@InProceedings{10.1007/978-3-031-82435-7_5,
+author="Tabatabaee, Yasamin
+and Wedell, Eleanor
+and Park, Minhyuk
+and Warnow, Tandy",
+editor="Cherifi, Hocine
+and Donduran, Murat
+and Rocha, Luis M.
+and Cherifi, Chantal
+and Varol, Onur",
+title="FastEnsemble: A New Scalable Ensemble Clustering Method",
+booktitle="Complex Networks {\&} Their Applications XIII",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="57--70",
+isbn="978-3-031-82435-7"
+}
+</code></pre>
+</div>
+
+
+<div class="row">
+  <div class="column left">
+    <img src="{{ site.baseurl }}/assets/paper_pics/TIPP-SD.jpg" alt="pic from paper" width="300" >
+  </div>
+  <div class="column right">
+    <em>TIPP-SD: A New Method for Species Detection in Microbiomes</em><br>
+    <em>(Abstract)</em><br>
+    Chengze Shen, <strong>Eleanor Wedell</strong>, Mihai Pip, Tandy Warnow<br>
+    <a href="https://arxiv.org/abs/2409.02077" target="_blank" rel="noopener noreferrer"-->ACM-BCB</a>, 2025 <br>
+	<div class="links">
+		<a class="button-link" onclick="toggleDisplay('TIPP-SD-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a>
+		<a class="button-link" onclick="toggleDisplay('TIPP-SD-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a>
+		<a class="button-link" href="{{ site.baseurl }}/assets/PDFs/TIPP-SD.pdf" target="_blank" rel="noopener noreferrer">
+			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
+		</a>
+		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='TIPP-SD: A New Method for Species Detection in Microbiomes' target="_blank" rel="noopener noreferrer">0</a>
+	</div>
+  </div>
+</div>
+<div id="TIPP-SD-abstract" class="abstract">
+  In this study, we present TIPP-SD (i.e., TIPP for Species Detection), a new technique for species detection in a microbiome sample. TIPP-SD uses a modified version of TIPP3, which is a recently developed abundance profiling tool based on maximum likelihood phylogenetic placement into marker gene taxonomies. TIPP-SD depends on a parameter (i.e., threshold) for the required support for species detection, thus allowing us to compute a precision-recall curve as we vary this parameter. In comparing the precision-recall curves for TIPP-SD, TIPP3, Kraken2, Bracken, and Metapresence, we find that TIPP-SD improves on the other methods with respect to accuracy under conditions where some species occur in low abundance, or where there is sequencing error. Under easier conditions, TIPP-SD is close to the best of these methods. Finally, although TIPP-SD is slower than Kraken2 and Bracken, it is still fast enough to be used on large datasets.
+</div>
+<div id="TIPP-SD-bibtex" class="bibtex">
+<pre><code>
+@article {Shen2025.08.27.672749,
+	author = {Shen, Chengze and Wedell, Eleanor and Pop, Mihai and Warnow, Tandy},
+	title = {TIPP-SD: A New Method for Species Detection in Microbiomes},
+	elocation-id = {2025.08.27.672749},
+	year = {2025},
+	doi = {10.1101/2025.08.27.672749},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2025/09/01/2025.08.27.672749},
+	eprint = {https://www.biorxiv.org/content/early/2025/09/01/2025.08.27.672749.full.pdf},
+	journal = {bioRxiv}
+}
 </code></pre>
 </div>
 
 
 <hr style="margin-top:1cm;">
-<h2 id="MS Thesis">Masters Thesis</h2>
-
-<!--
-<div class="row">
-  <div class="column left">
-    <img src="{{ site.baseurl }}/assets/paper_pics/car.png" alt="pic from paper" width="200" >
-  </div>
-  <div class="column right">
-    <em>Reachable Predictive Control: A Novel Control Algorithm for Nonlinear Systems with Unknown Dynamics (Currently being written)</em><br>
-    <strong>Taha Shafa</strong> &nbsp;&nbsp;&nbsp; Advisor: Melkior Ornik <br>
-    Doctoral thesis. <a href="https://illinois.edu/" target="_blank" rel="noopener noreferrer">University of Illinois Urbana-Champaign</a>, 2025 <br>
-	<div class="links"> -->
-		<!--a class="button-link" onclick="toggleDisplay('PhD-abstract')"><span class="button"><i class="fas fa-list"></i> Abstract</span></a-->
-		<!--a class="button-link" onclick="toggleDisplay('PhD-bibtex')"><span class="button"><i class="fas fa-magnifying-glass"></i> Bibtex</span></a-->
-		<!--a class="button-link" href="{{ site.baseurl }}/assets/PDFs/PhD_Thesis.pdf" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fas fa-file-pdf"></i> Pdf</span>
-		</a-->		
-    <!--
-  		<a class="button-link" href="{{site.baseurl}}/assets/Slides/Prelim_Slides.pdf" target="_blank" rel="noopener noreferrer">
-			<span class="button"><i class="fas fa-file-powerpoint"></i> Slides</span>
-		</a>
-		<i class="ai ai-google-scholar"></i> Cited by <a href='' id='Reachable Predictive Control: A Novel Control Algorithm for Nonlinear Systems with Unknown Dynamics' target="_blank" rel="noopener noreferrer">0</a>
-	</div>
-  </div>
-</div> -->
-<!--div id="PhD-abstract" class="abstract">
-  After docking to the International Space Station (ISS), the Nauka module suffered a software error causing its thrusters to misfire.
-  In turn, these uncontrolled thrusters rotated the whole space station by 540° before being counteracted by other thrusters of the ISS.
-  Motivated by such a scenario, this thesis investigates the guaranteed resilience of autonomous systems to a similar class of malfunctions called partial loss of control authority over actuators.
-  These malfunctions are characterized by actuators producing uncontrolled and undesirable outputs instead of following the controller’s commands.
-  A loss of control authority can be caused, for instance, by a software bug as in the ISS example or by an adversarial takeover of some actuators of the system.
-  In this setting, we investigate the malfunctioning system's remaining capabilities to complete its mission in terms of resilient reachability and resilient trajectory tracking.
-  We also quantify the resilience of linear systems by comparing the reachability performance of the nominal dynamics with that of the worst-case malfunctioning dynamics.
-  We extend our resilience investigation to systems further inflicted with actuation delays preventing an immediate cancellation of the undesirable outputs.
-  We illustrate our theory on a wide range of applications including an octocopter, a fighter jet model, and an orbital inspection mission.
-</div>
-<div id="PhD-bibtex" class="bibtex">
-<pre><code>
-@phdthesis{bouvier2023phd,
-  author = {Jean-Baptiste Bouvier},
-  title = {Guaranteed resilience of autonomous systems to loss of control authority over actuators},
-  school = {University of Illinois Urbana-Champaign},
-  year = {2023}
-}
-</code></pre>
-</div-->
+<h2 id="Masters Thesis">Masters Thesis</h2>
 
 
 <div class="row">

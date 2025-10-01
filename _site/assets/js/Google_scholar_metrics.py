@@ -2,7 +2,7 @@
 """
 Created on Fri May  5 15:32:20 2023
 
-@author: Jean-Baptiste Bouvier Modified by Eleanor Wedell
+@author: Jean-Baptiste Bouvier
 
 Code to extract Google scholar metrics from a profile
 """
